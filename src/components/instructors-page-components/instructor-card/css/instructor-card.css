@@ -1,0 +1,14 @@
+.instructor-card:hover .instructor-qr-code {
+    bottom: 0;
+    opacity: 0;
+}
+.instructor-card:hover .instructor-info {
+    bottom: 0;
+    opacity: 1;
+}
+.instructor-card:hover .instructor-info .instructor-name,
+.instructor-card:hover .instructor-info .instructor-course,
+.instructor-card:hover .instructor-info .instructor-email {
+    transform: translateY(0);
+    opacity: 1;
+}

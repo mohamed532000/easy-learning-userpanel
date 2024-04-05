@@ -1,0 +1,50 @@
+#preloader {
+    background-color: rgba(30, 30, 30, 0.84);
+}
+#preloader.un-active {
+    display: none;
+}
+#loader,
+#loader:before,
+#loader:after {
+    border: 3px solid transparent;
+    border-top-color: snow;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader {
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    animation: spin 3s linear infinite;
+    /* border-top-color: #6e0bd2; */
+}
+#loader:after {
+    /* border-top-color: #0d00ff; */
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,8 @@
+.to-learn-btn:hover > i {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.to-learn-btn:hover > p {
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,9 @@
+.add-to-cart-btn:hover > p {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.add-to-cart-btn:hover > i {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}

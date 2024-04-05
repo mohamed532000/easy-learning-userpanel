@@ -1,0 +1,1090 @@
+{
+    "courses" : [
+      {
+        "overview": {
+          "id": 1,
+          "category": "Digital Marketing",
+          "poster": "https://i.pinimg.com/564x/93/b7/f9/93b7f99d86a796d4808cba27dcb415f4.jpg",
+          "info": "Master the art of digital marketing and grow your online presence.",
+          "language": "Italian",
+          "level": "Beginner",
+          "rating": 4,
+          "course_hours": "60 hours",
+          "price": 199,
+          "offer": "25%",
+          "overview_content": "Welcome to our comprehensive digital marketing courses designed to help you master the art and science of modern digital marketing. Whether you're an aspiring marketer, an entrepreneur, or a business professional looking to enhance your digital marketing skills, our courses offer a deep dive into various digital marketing disciplines. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Getting Started",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Digital Marketing",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Understanding SEO and SEM",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Advanced Digital Marketing",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Social Media Marketing Strategies",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Email Marketing Campaigns",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/e6/5d/e0/e65de02fe09b1d0a135a1295b316aeb1.jpg",
+          "instructor_name": "Ahmed Nageh",
+          "instructor_career": "Digital Marketing Expert",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/sarahdigital",
+            "twitter": "https://www.twitter.com/sarahdigital",
+            "website": "https://www.sarahdigitalmarketing.com"
+          },
+          "instructor_info": "Hello, I'm Sarah, a digital marketing specialist with a passion for helping businesses succeed online. In my courses, I share my expertise in digital marketing and guide you through the process of creating effective online marketing strategies. Whether you're a business owner or aspiring digital marketer, my courses will empower you to boost your online presence and achieve your marketing goals."
+        },
+        "target": [
+          "Learn digital marketing strategies.",
+          "Improve online brand presence.",
+          "Enhance SEO and SEM skills."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://www.pinterest.com/pin/23714335528652538/",
+            "name": "John Smith"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/e3/44/0e/e3440eb42db944ce340ebd65b53eb38c.jpg",
+            "name": "Emily Davis"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 2,
+          "category": "Graphic Design",
+          "poster": "https://i.pinimg.com/564x/d9/bf/26/d9bf2651bbe203f8d498490bc27c470b.jpg",
+          "info": "Unlock your creativity with graphic design and visual communication.",
+          "language": "Spanish",
+          "level": "Intermediate",
+          "rating": 5,
+          "course_hours": "45 hours",
+          "price": 189,
+          "offer": "15%",
+          "overview_content": "Explore the world of graphic design and visual communication in our comprehensive courses. Whether you're a budding designer or looking to enhance your design skills, our courses cover a wide range of topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Foundations of Graphic Design",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Graphic Design Principles",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Typography and Layout Design",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Advanced Design Techniques",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Logo Design and Branding",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Illustration and Digital Art",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/1b/02/6b/1b026ba7395e9d5eef19eafcdf90df51.jpg",
+          "instructor_name": "Eleanor Clark",
+          "instructor_career": "Graphic Designer and Educator",
+          "contactLinks": {
+            "instagram": "https://www.instagram.com/eleanor_designs",
+            "website": "https://www.eleanorclarkdesigns.com"
+          },
+          "instructor_info": "Hi, I'm Eleanor, a passionate graphic designer with a love for visual communication. My courses aim to unlock your creativity and provide you with the skills to excel in the world of design. Whether you're a beginner or an experienced designer, my courses offer a comprehensive learning experience."
+        },
+        "target": [
+          "Learn graphic design principles.",
+          "Master typography and layout design.",
+          "Create stunning logos and illustrations."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/2f/57/8d/2f578d07945132849b05fbdaf78cba38.jpg",
+            "name": "David Brown"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/81/ac/9e/81ac9ef6456e8eccbf651fc368e83e4a.jpg",
+            "name": "Olivia Turner"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 3,
+          "category": "Business Management",
+          "poster": "https://i.pinimg.com/564x/89/67/ec/8967ec4d7d01974b61dad968fbe02553.jpg",
+          "info": "Advance your business management skills and leadership abilities.",
+          "language": "Spanish",
+          "level": "Advanced",
+          "rating": 4,
+          "course_hours": "50 hours",
+          "price": 199,
+          "offer": "20%",
+          "overview_content": "Enhance your business management skills and leadership abilities with our comprehensive courses. Whether you're an aspiring entrepreneur or a business professional seeking career growth, our courses cover a wide range of business topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Foundations of Business Management",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Business Leadership",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Strategic Planning and Decision-Making",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Advanced Business Strategies",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Financial Management and Budgeting",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Team Leadership and Motivation",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/1b/39/f7/1b39f75516d957ab504fbf4bc739b084.jpg",
+          "instructor_name": "Michael Anderson",
+          "instructor_career": "Business Consultant and Educator",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/michaelbusiness",
+            "twitter": "https://www.twitter.com/michaelbusiness",
+            "website": "https://www.michaelbusinessmanagement.com"
+          },
+          "instructor_info": "Hello, I'm Michael, a business consultant and educator with a passion for helping individuals excel in the world of business management. My courses provide a comprehensive understanding of leadership, strategic planning, and financial management."
+        },
+        "target": [
+          "Develop leadership and decision-making skills.",
+          "Strategically plan for business success.",
+          "Effectively manage finances and teams."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/4d/7a/4c/4d7a4c5a453f241da99432c5fc90b620.jpg",
+            "name": "John Davis"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/31/5b/83/315b83b63690a086cdc14c6e7ea27af5.jpg",
+            "name": "David Smith"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 4,
+          "category": "Web Development",
+          "poster": "https://i.pinimg.com/564x/f5/c8/66/f5c866ca5b9e4d798bd0ae8b23e1aeac.jpg",
+          "info": "Build stunning websites and web applications from scratch.",
+          "language": "English",
+          "level": "Advanced",
+          "rating": 5,
+          "course_hours": "55 hours",
+          "price": 179,
+          "offer": "0%",
+          "overview_content": "Embark on a journey to master web development with our comprehensive courses. Whether you're a novice or an experienced developer, our courses cover a wide range of web development topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Front-End Web Development",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "HTML and CSS Fundamentals",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "JavaScript and Responsive Design",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Back-End Web Development",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Server-Side Development with Node.js",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Database Management and APIs",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/fd/a5/6e/fda56e135e1964d86eb8566a21d9f872.jpg",
+          "instructor_name": "John Smith",
+          "instructor_career": "Web Developer and Instructor",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/johnwebdev",
+            "twitter": "https://www.twitter.com/johnwebdev",
+            "website": "https://www.johnwebdevelopment.com"
+          },
+          "instructor_info": "Hello, I'm John, a web developer and instructor with a passion for teaching the art of web development. My courses cover everything from front-end web design to back-end development, providing you with the skills to build stunning websites and web applications from scratch."
+        },
+        "target": [
+          "Master HTML, CSS, and JavaScript.",
+          "Develop responsive web applications.",
+          "Build server-side applications with Node.js."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/2c/01/d9/2c01d960240aa1fd043c5198d64f775f.jpg",
+            "name": "Wilson"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/2f/ff/0c/2fff0c1d5e54b980ab3c317683fef311.jpg",
+            "name": "Daniel Brown"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 5,
+          "category": "Fitness",
+          "poster": "https://i.pinimg.com/564x/2b/97/71/2b9771cfb97632e325ce19bee61f5f04.jpg",
+          "info": "Transform your fitness and well-being with expert guidance.",
+          "language": "English",
+          "level": "Intermediate",
+          "rating": 4,
+          "course_hours": "40 hours",
+          "price": 149,
+          "offer": "0%",
+          "overview_content": "Embark on a journey to improve your fitness and overall well-being with our comprehensive courses. Whether you're new to fitness or looking to take your wellness to the next level, our courses cover a wide range of health and fitness topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Fitness Workouts",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Cardio and Strength Training",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Yoga and Mindfulness",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Nutrition and Diet",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Healthy Eating Habits",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Meal Planning and Nutritional Tips",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/fd/e3/b8/fde3b8a7a48aa75a15758b27e30212d1.jpg",
+          "instructor_name": "Linda Turner",
+          "instructor_career": "Fitness Trainer and Wellness Coach",
+          "contactLinks": {
+            "instagram": "https://www.instagram.com/lindawellness",
+            "website": "https://www.lindawellnesscoach.com"
+          },
+          "instructor_info": "Hello, I'm Linda, a fitness trainer and wellness coach dedicated to helping individuals lead healthier and happier lives. My courses provide you with the knowledge and guidance to achieve your fitness and wellness goals, from effective workouts to balanced nutrition."
+        },
+        "target": [
+          "Improve fitness and strength.",
+          "Cultivate mindfulness and well-being.",
+          "Adopt healthy eating habits and meal planning."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/c2/e4/92/c2e49287038238bd3dfa86df77b10a4b.jpg",
+            "name": "Mark Davis"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/28/96/e7/2896e7a7252638b7a2694005e29d6a3c.jpg",
+            "name": "Rachel Smith"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 6,
+          "category": "Programming",
+          "poster": "https://i.pinimg.com/564x/89/b9/49/89b94950b914f97a4c4831dcd1044dcc.jpg",
+          "info": "Master programming languages and software development.",
+          "language": "English",
+          "level": "Intermediate",
+          "rating": 5,
+          "course_hours": "60 hours",
+          "price": 199,
+          "offer": "15%",
+          "overview_content": "Unlock the world of programming and software development with our comprehensive courses. Whether you're a beginner or an experienced coder, our courses cover a wide range of programming languages and software development topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Fundamental Programming",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Python",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Java Programming Basics",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Web Development with JavaScript",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Front-End Development with HTML/CSS",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Back-End Development with Node.js",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/9b/61/30/9b613063452cb6b853a53c567f69a1d5.jpg",
+          "instructor_name": "Robert Turner",
+          "instructor_career": "Software Developer and Educator",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/robertdev",
+            "twitter": "https://www.twitter.com/robertdev",
+            "website": "https://www.robertprogramming.com"
+          },
+          "instructor_info": "Hi, I'm Robert, a software developer and educator passionate about sharing my knowledge of programming and software development. My courses cover various programming languages and software development practices to help you become a proficient coder."
+        },
+        "target": [
+          "Learn programming languages like Python and Java.",
+          "Build dynamic web applications with JavaScript.",
+          "Develop both front-end and back-end solutions."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/8b/89/01/8b890191e3f5c801e92f0a1234f7ae63.jpg",
+            "name": "Smith Johnson"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/19/c7/ca/19c7ca5d888e3644e6d345f955a353e3.jpg",
+            "name": "Daniel Johnson"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 7,
+          "category": "Science",
+          "poster": "https://i.pinimg.com/564x/32/d9/26/32d9260b39fd6d9214f132a77fe6baed.jpg",
+          "info": "Dive into data analysis and become a data science expert.",
+          "language": "Italian",
+          "level": "Advanced",
+          "rating": 5,
+          "course_hours": "55 hours",
+          "price": 179,
+          "offer": "15%",
+          "overview_content": "Embark on a journey into the world of data science and analysis with our comprehensive courses. Whether you're a data enthusiast or a professional looking to advance your data analysis skills, our courses cover a wide range of data science topics. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Foundations of Data Science",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Introduction to Data Analysis",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Statistics and Data Visualization",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Machine Learning and AI",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Machine Learning Algorithms",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Deep Learning and Neural Networks",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/24/6f/88/246f88042c820c04ac56989d3712547c.jpg",
+          "instructor_name": "Emily Davis",
+          "instructor_career": "Data Scientist and Educator",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/emilydata",
+            "twitter": "https://www.twitter.com/emilydata",
+            "website": "https://www.emilydatascience.com"
+          },
+          "instructor_info": "Hello, I'm Emily, a data scientist and educator passionate about helping individuals dive into the world of data analysis and machine learning. My courses cover a wide range of data science topics to make you an expert in the field."
+        },
+        "target": [
+          "Master data analysis and visualization techniques.",
+          "Understand machine learning algorithms and AI.",
+          "Apply data science concepts in real-world projects."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/fa/fe/b9/fafeb92850ae402d81cff86d1c1b70ff.jpg",
+            "name": "Turner"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/474x/bd/40/2d/bd402d51ba5183d8922fbe8d34229671.jpg",
+            "name": "Michael Johnson"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 8,
+          "category": "Photography",
+          "poster": "https://i.pinimg.com/564x/9b/7f/ac/9b7facc70c05afd70d0aeb5d3fcd1826.jpg",
+          "info": "Capture stunning moments with professional photography techniques.",
+          "language": "Italian",
+          "level": "Beginner",
+          "rating": 5,
+          "course_hours": "50 hours",
+          "price": 189,
+          "offer": "0%",
+          "overview_content": "Elevate your photography skills and capture breathtaking moments with our comprehensive courses. Whether you're an amateur photographer or looking to enhance your photography expertise, our courses cover various photography techniques. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Basic Photography Principles",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Understanding Camera Settings",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Composition and Lighting",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Advanced Photography Techniques",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Portrait Photography",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Landscape and Travel Photography",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://www.pinterest.com/pin/536280268144614173/",
+          "instructor_name": "Baker",
+          "instructor_career": "Professional Photographer and Educator",
+          "contactLinks": {
+            "instagram": "https://www.instagram.com/oliviaphoto",
+            "website": "https://www.oliviaphotography.com"
+          },
+          "instructor_info": "Hi, I'm Olivia, a professional photographer and educator dedicated to helping individuals improve their photography skills. My courses cover various photography techniques to unleash your creative potential."
+        },
+        "target": [
+          "Learn camera settings and photography composition.",
+          "Master portrait and landscape photography techniques.",
+          "Capture stunning photos for personal or professional use."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/df/74/86/df74863ae0dfd9182a531131962c32bf.jpg",
+            "name": "William Harris"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/736x/5a/a0/01/5aa001bba465d515f8ccf6d248dce5ff.jpg",
+            "name": "Ella Martin"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 9,
+          "category": "Graphic Design",
+          "poster": "https://i.pinimg.com/564x/b2/df/83/b2df83ab50f2640bbc226e5665a49122.jpg",
+          "info": "Unlock your creative potential with graphic design skills.",
+          "language": "Italian",
+          "level": "Beginner",
+          "rating": 4,
+          "course_hours": "45 hours",
+          "price": 159,
+          "offer": "15%",
+          "overview_content": "Explore the world of graphic design and tap into your creative side with our comprehensive courses. Whether you're a budding designer or looking to enhance your graphic design skills, our courses cover various design principles. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Design Fundamentals",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Understanding Design Elements",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Color Theory and Typography",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Advanced Design Techniques",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Logo Design and Branding",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Web and Mobile UI/UX Design",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/65/14/e9/6514e99e28de1bd584723b8b9738016c.jpg",
+          "instructor_name": "Reda Turner",
+          "instructor_career": "Graphic Designer and Educator",
+          "contactLinks": {
+            "instagram": "https://www.instagram.com/sophiadesigns",
+            "website": "https://www.sophiadesignstudio.com"
+          },
+          "instructor_info": "Hello, I'm Sophia, a graphic designer and educator passionate about nurturing creativity and design skills. My courses cover various design principles to unleash your artistic potential."
+        },
+        "target": [
+          "Learn design elements and principles.",
+          "Master logo design and branding techniques.",
+          "Design web and mobile interfaces with UX/UI principles."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/e8/04/f6/e804f67d357cf30783f4e0f67cc008ed.jpg",
+            "name": "Mark Williams"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/bc/73/54/bc73543e1700c51cf7f4fbd929dde49a.jpg",
+            "name": "Hannah Brown"
+          }
+        ]
+      },
+      {
+        "overview": {
+          "id": 10,
+          "category": "Business Management",
+          "poster": "https://i.pinimg.com/564x/97/d4/cd/97d4cd434e75238008fa9dffac789d78.jpg",
+          "info": "Enhance your business skills and leadership capabilities.",
+          "language": "English",
+          "level": "Intermediate",
+          "rating": 5,
+          "course_hours": "50 hours",
+          "price": 179,
+          "offer": "10%",
+          "overview_content": "Advance your career and leadership skills with our comprehensive courses in business management. Whether you're a business professional or an aspiring entrepreneur, our courses cover various aspects of business and leadership. Here's what you can expect."
+        },
+        "sections": [
+          {
+            "section_id": 1,
+            "section_title": "Leadership and Management",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Leadership Principles",
+                "lesson_video": "https://example.com/lesson1.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Strategic Business Management",
+                "lesson_video": "https://example.com/lesson2.mp4"
+              }
+            ]
+          },
+          {
+            "section_id": 2,
+            "section_title": "Entrepreneurship and Innovation",
+            "lessons": [
+              {
+                "lesson_id": 1,
+                "lesson_title": "Business Strategy and Innovation",
+                "lesson_video": "https://example.com/lesson3.mp4"
+              },
+              {
+                "lesson_id": 2,
+                "lesson_title": "Financial Management and Planning",
+                "lesson_video": "https://example.com/lesson4.mp4"
+              }
+            ]
+          }
+        ],
+        "instructor": {
+          "instructor_img": "https://i.pinimg.com/564x/94/4b/2b/944b2b474f682c4c4095591917d3b1a9.jpg",
+          "instructor_name": "Daniel Brown",
+          "instructor_career": "Business Consultant and Educator",
+          "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/danielbusiness",
+            "twitter": "https://www.twitter.com/danielbusiness",
+            "website": "https://www.danielbusinessconsulting.com"
+          },
+          "instructor_info": "Hi, I'm Daniel, a business consultant and educator dedicated to helping individuals excel in business management and leadership. My courses cover various aspects of business, from leadership principles to financial management."
+        },
+        "target": [
+          "Develop leadership and management skills.",
+          "Enhance strategic thinking and business innovation.",
+          "Master financial management and entrepreneurship."
+        ],
+        "other_instructors": [
+          {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/05/2d/17/052d17dbc3c0f009d412656de3c93978.jpg",
+            "name": "Emily Smith"
+          },
+          {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/32/f5/25/32f525caa37da0ae0145b70b4a592485.jpg",
+            "name": "Michael Johnson"
+          },
+          {
+            "id": 3,
+            "image": "https://i.pinimg.com/564x/01/c0/e7/01c0e701c51b980628e5e36ab7eb0740.jpg",
+            "name": "Rady Fadl"
+          }
+        ]
+      }
+    ],
+    "events": [
+    {
+        "id": 1,
+        "aboutEvent": "Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release containing Lorem Ipsum passages desktop publishing software. The leap into electronic typesetting. Consectetur adipiscing elit. Commodo amet habitasse orci convallis sodales augue. Ac, pellentesque proin tincidunt lobortis sit velit velit dui eget. Massa, lectus orci auctor morbi. A nisl vitae, sagittis elementum placerat nullam id integer leo.",
+        "call": "(+9125) 000 1245",
+        "certificate": "yes",
+        "dayLeft": 16,
+        "eventAgenda": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "Commodo amet habitasse orci convallis sodales augue.",
+          "Typesetting industry. Lorem Ipsum has been the industry's standard dummy."
+        ],
+        "eventDate": "14 January, 2023",
+        "eventImg": "https://asset.uibucket.net/html/ilearning/assets/images/event/event-3.png",
+        "eventInfo": "Provides educational consulting services for student-clients who want to study in Canada, and require help with the application process.",
+        "eventLocation": "2972 Westheimer Rd. Santa Ana",
+        "eventName": "Social Media Marketing Masterclass",
+        "eventTime": [
+          {
+            "from": 8,
+            "to": 5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget est a odio volutpat blandit. Proin euismod ex quis purus interdum, id convallis elit egestas. Aliquam sit amet lacinia ex. Nullam eget risus nec sem faucibus iaculis. Phasellus vehicula vestibulum odio ac ultricies. In euismod, tellus at volutpat dignissim.",
+        "call": "(+9125) 123 4567",
+        "certificate": "no",
+        "dayLeft": 20,
+        "eventAgenda": [
+          "Vestibulum at facilisis odio.",
+          "Nunc eget odio vel turpis congue euismod.",
+          "Aliquam erat volutpat. Sed tincidunt, urna eu euismod."
+        ],
+        "eventDate": "20 February, 2023",
+        "eventImg": "https://example.com/event2.jpg",
+        "eventInfo": "Join us for an exciting event focused on personal development and self-improvement.",
+        "eventLocation": "123 Main Street, Cityville",
+        "eventName": "Personal Development Workshop",
+        "eventTime": [
+          {
+            "from": 9,
+            "to": 4
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed a bibendum elit. Aenean non sapien non arcu malesuada viverra. Fusce nec ultrices mauris. Nulla facilisi. Etiam eget erat id nisl viverra sollicitudin. Ut viverra tincidunt ligula at congue. Sed hendrerit sem vel lacinia posuere.",
+        "call": "(+9125) 987 6543",
+        "certificate": "yes",
+        "dayLeft": 12,
+        "eventAgenda": [
+          "Cras non placerat eros.",
+          "Aliquam erat volutpat. Vestibulum et bibendum odio.",
+          "Phasellus tincidunt arcu non hendrerit."
+        ],
+        "eventDate": "10 March, 2023",
+        "eventImg": "https://example.com/event3.jpg",
+        "eventInfo": "An educational event offering certification in digital marketing and online advertising.",
+        "eventLocation": "789 Elm Street, Riverside",
+        "eventName": "Digital Marketing Certification Program",
+        "eventTime": [
+          {
+            "from": 10,
+            "to": 6
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante vel odio hendrerit, at fringilla purus luctus. Nullam viverra lacus nec malesuada. In eu diam vel lectus vestibulum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce et euismod nisl.",
+        "call": "(+9125) 567 8901",
+        "certificate": "yes",
+        "dayLeft": 25,
+        "eventAgenda": [
+          "Mauris a ipsum eget libero facilisis.",
+          "Cras in bibendum felis. Nullam malesuada sem id urna.",
+          "Aenean eget bibendum quam. Suspendisse potenti."
+        ],
+        "eventDate": "5 April, 2023",
+        "eventImg": "https://example.com/event4.jpg",
+        "eventInfo": "Discover the world of graphic design and enhance your creative skills.",
+        "eventLocation": "456 Oak Avenue, Parkside",
+        "eventName": "Graphic Design Workshop",
+        "eventTime": [
+          {
+            "from": 11,
+            "to": 7
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex nec eros malesuada vestibulum ac sit amet nisi. Curabitur ut congue sapien. Suspendisse consectetur nec augue a eleifend. Nullam nec nunc sit amet sem tincidunt rhoncus. Vivamus eu odio vel urna aliquet lacinia.",
+        "call": "(+9125) 111 2222",
+        "certificate": "no",
+        "dayLeft": 30,
+        "eventAgenda": [
+          "In euismod a elit eu rhoncus.",
+          "Mauris aliquet, elit id cursus varius, lorem elit id elit.",
+          "Suspendisse sed congue eros."
+        ],
+        "eventDate": "15 May, 2023",
+        "eventImg": "https://example.com/event5.jpg",
+        "eventInfo": "Join us for an exciting event focused on innovation and entrepreneurship.",
+        "eventLocation": "101 Pine Street, Innovation City",
+        "eventName": "Innovation and Entrepreneurship Conference",
+        "eventTime": [
+          {
+            "from": 9,
+            "to": 5
+          }
+        ]
+      }
+    ],
+    "instructors": [
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "UI&UX Course",
+      "email": "Ahmed44325@gmail.com",
+      "experiences": 7,
+      "grauduated": "yes",
+      "id": 1,
+      "instructorImg": "https://asset.uibucket.net/html/ilearning/assets/images/experts/expert-5.png",
+      "instructorName": "Jomana Nasser",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 5,
+      "total course": 22
+    },
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "Sales Marketing",
+      "email": "Bisho0908@gmail.com",
+      "experiences": 4,
+      "grauduated": "yes",
+      "id": 2,
+      "instructorImg": "https://asset.uibucket.net/html/ilearning/assets/images/experts/expert-6.png",
+      "instructorName": "Ahmed Nageh",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 5,
+      "total course": 30
+    },
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "Data Science",
+      "email": "John200@gmail.com",
+      "experiences": 3,
+      "grauduated": "yes",
+      "id": 3,
+      "instructorImg": "https://asset.uibucket.net/html/ilearning/assets/images/experts/expert-8.png",
+      "instructorName": "Reda Assem",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 4,
+      "total course": 17
+    },
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "Photography",
+      "email": "Emadshaher66@gmail.com",
+      "experiences": 6,
+      "grauduated": "yes",
+      "id": 4,
+      "instructorImg": "https://tse1.mm.bing.net/th?id=OIP.zOnEpfTWkH41MA3rBjC9KwAAAA&pid=Api&P=0&h=180",
+      "instructorName": "Ahmed Samir",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 5,
+      "total course": 12
+    },
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "Front End Development",
+      "email": "Fleming897@gmail.com",
+      "experiences": 4,
+      "grauduated": "yes",
+      "id": 5,
+      "instructorImg": "https://tse1.mm.bing.net/th?id=OIP.MXYc6gSd_H6SREsg62LiRAAAAA&pid=Api&P=0&h=180",
+      "instructorName": "Radwa Nasser",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 5,
+      "total course": 25
+    },
+    {
+      "certification": "Metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam.",
+      "course": "Back End Development",
+      "email": "Kimberly22@gmail.com",
+      "experiences": 7,
+      "grauduated": "yes",
+      "id": 6,
+      "instructorImg": "https://tse1.mm.bing.net/th?id=OIP.a-NE7JId0h2WeH-GlIK9OwAAAA&pid=Api&P=0&h=180",
+      "instructorName": "Khaled Gad",
+      "language": "english,USA",
+      "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
+      "ratings": 4,
+      "total course": 23
+    }
+    ],
+    "plans": [
+    {
+      "futures": [
+        "Unlimited Access Courses",
+        "Certificate After Completion",
+        "High Resolution Videos",
+        "24/7 Dedicated Support",
+        "5 Free PDF Book",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Personal Instructor Assitance"
+      ],
+      "planImg": "https://asset.uibucket.net/html/ilearning/assets/images/icons/pricing-2.svg",
+      "planName": "Standard Pack",
+      "planPrice": 49,
+      "planStatus": "standard"
+    },
+    {
+      "futures": [
+        "Unlimited Access Courses",
+        "Certificate After Completion",
+        "High Resolution Videos",
+        "24/7 Dedicated Support",
+        "5 Free PDF Book",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Personal Instructor Assitance"
+      ],
+      "planImg": "https://asset.uibucket.net/html/ilearning/assets/images/icons/pricing-3.svg",
+      "planName": "Premium Pack",
+      "planPrice": 109,
+      "planStatus": "premium"
+    },
+    {
+      "futures": [
+        "Unlimited Access Courses",
+        "Certificate After Completion",
+        "High Resolution Videos",
+        "24/7 Dedicated Support",
+        "5 Free PDF Book",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Interactive practice sessions",
+        "Excercise Files & Notes",
+        "Personal Instructor Assitance"
+      ],
+      "planImg": "https://asset.uibucket.net/html/ilearning/assets/images/icons/pricing-1.svg",
+      "planName": "Basic Pack",
+      "planPrice": 134,
+      "planStatus": "basic"
+    }
+    ],
+    "studentsOpinion": [
+    {
+        "id": 1,
+        "studentCourse": "UX/UI Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-1.png",
+        "studentName": "Courtney Henry",
+        "studentRateCount": 5,
+        "studentSay": "Provides educational consulting services for student-clients who want to study in Canada with the application process.",
+        "studentSay2": "Great"
+      },
+      {
+        "id": 2,
+        "studentCourse": "Programming Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-2.png",
+        "studentName": "Alex Johnson",
+        "studentRateCount": 4,
+        "studentSay": "I learned so much during the programming course. The instructors were knowledgeable and supportive.",
+        "studentSay2": "Very informative"
+      },
+      {
+        "id": 3,
+        "studentCourse": "Digital Marketing Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png",
+        "studentName": "Emma Davis",
+        "studentRateCount": 5,
+        "studentSay": "The digital marketing course was excellent! I gained practical skills and enjoyed every moment of it.",
+        "studentSay2": "Highly recommended"
+      },
+      {
+        "id": 4,
+        "studentCourse": "Art Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-4.png",
+        "studentName": "Benjamin Turner",
+        "studentRateCount": 4,
+        "studentSay": "The art course allowed me to explore my creativity and develop my artistic skills. I'm grateful for the experience.",
+        "studentSay2": "Impressive"
+      },
+      {
+        "id": 5,
+        "studentCourse": "Language Learning Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-5.png",
+        "studentName": "Sophia Walker",
+        "studentRateCount": 5,
+        "studentSay": "I enrolled in a language course, and it was fantastic. The language instructors were patient and engaging.",
+        "studentSay2": "Excellent"
+      },
+      {
+        "id": 6,
+        "studentCourse": "Business Student",
+        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-6.png",
+        "studentName": "William Foster",
+        "studentRateCount": 4,
+        "studentSay": "The business course was a valuable experience for me. I gained insights into business strategies and management.",
+        "studentSay2": "Informative"
+      }
+    ]
+}

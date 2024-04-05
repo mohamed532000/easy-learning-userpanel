@@ -1,0 +1,28 @@
+.filter-nav-list li.active {
+    background-color: rgb(62, 62, 207);
+    color: white;
+}
+.filter-nav-list li.active > i {
+    color: white;
+}
+.custom-button:hover > span {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.custom-button:hover > i {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.submit-rivew-btn:hover > span {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.submit-rivew-btn:hover > i {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.info-box.active {
+    display: flex;
+}

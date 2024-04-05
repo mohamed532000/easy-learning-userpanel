@@ -1,0 +1,28 @@
+.alert-parent.active {
+    visibility: visible;
+    opacity: 1;
+}
+.alert-parent.active .alert {
+    transform: translateX(0);
+    opacity: 1;
+}
+.alert-parent.active .alert img {
+    animation: bell-ring-animate 1s .5s ease-in 1 both;
+}
+@keyframes bell-ring-animate {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+    75%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}

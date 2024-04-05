@@ -1,0 +1,101 @@
+.nav.scrolling {
+    padding: 6px 0;
+    box-shadow: 2px 2px 5px rgb(133, 133, 133);
+    background-color: white;
+}
+.list.active {
+    visibility: visible;
+    opacity: 1;
+}
+.list.active ul li {
+    animation: links-animate2 var(--i) .5s ease-in-out both;
+}
+.list ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.list ul li:hover::after {
+    animation: links-animate .5s ease-in-out both;
+}
+.nav.scrolling .list .search-div,
+.nav.dark-text .list .search-div {
+    box-shadow: 1px 1px 3px rgb(186, 186, 186);
+}
+.nav.scrolling .list ul li > ul {
+    background-color: white;
+}
+.nav.dark-text .list ul li a,
+.nav.dark-text .list ul li p,
+.nav.dark-text .list ul li i,
+.nav.dark-text .list .users-icons i,
+.nav.scrolling .list ul li a,
+.nav.scrolling .list .users-icons i,
+.nav.scrolling .list ul li p,
+.nav.scrolling .list ul li i,
+.nav.dark-text .nav-container > i {
+    color: black;
+}
+.nav.scrolling .search i {
+    color: rgb(110, 110, 110);
+}
+.nav.scrolling div i.togglerListIcon {
+    color: rgb(28, 26, 26);
+}
+@keyframes links-animate {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+@keyframes links-animate2 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width: 1024px) {
+    .list.un-active {
+        transition-delay: 1.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .list.un-active ul li {
+        animation: links-animate3 var(--i) .5s ease-in-out both;
+    }
+    @keyframes links-animate3 {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.cta:hover >  span:after {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.cta:hover > i {
+    margin-left: 10px;
+    color: rgb(46, 45, 45);
+}

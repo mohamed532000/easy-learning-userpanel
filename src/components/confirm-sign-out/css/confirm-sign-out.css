@@ -1,0 +1,13 @@
+.confirm-sign-out-popub.active {
+    visibility: visible;
+    opacity: 1;
+}
+.sign-out-btn:hover > p {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.sign-out-btn:hover > i {
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 1;
+}
