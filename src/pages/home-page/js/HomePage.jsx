@@ -15,6 +15,12 @@ import emptyState from "../../../media/images/empty-state.png";
 import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
+import heroBg from "../../../media/images/hero-bg.webp";
+import st1Img from "../../../media/images/st1.webp";
+import st2Img from "../../../media/images/st2.webp";
+import st3Img from "../../../media/images/st3.webp";
+import girlSt1Img from "../../../media/images/girl-st1.webp";
+import girlSt2Img from "../../../media/images/girl-st2.webp";
 
 export default function HomePage() {
     let [allCourses , setAllCourses] = useState()
@@ -104,10 +110,10 @@ export default function HomePage() {
             }
         })
     },[catFilter]);
-
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
-            <div className="header relative h-[100vh] w-full bg-[url(https://asset.uibucket.net/html/ilearning/assets/images/home-1/hero-bg.jpg)] bg-center bg-no-repeat bg-cover  flex justify-center items-center">
+            <div className={`header relative h-[100vh] w-full bg-center bg-no-repeat bg-cover  flex justify-center items-center`} style={{backgroundImage : `url("${heroBg}")`}}>
                 <div className="container-div relative w-[90%] flex justify-center items-center">
                     <div className="header-text w-[800px] flex flex-col text-center">
                         <h2 className="text-3xl md:text-5xl lg:text-5xl transition duration-500 ease-linear font-bold my-5 text-white">
@@ -247,47 +253,47 @@ export default function HomePage() {
                         spaceBetween={80}
                         speed={1000}
                         >
-                        <SwiperSlide className="slide py-[70px]">
+                        <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
-                                studentImg="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png"
+                                studentImg={st1Img}
                                 studentCourse="UX/UI Student"
-                                studentName="asojcoaocs"
+                                studentName="Johny"
                                 studentInfo="Provides educational consulting services for student- clients who want to study in
                                 Canada with the application process."
                                 studentReview={4} />
                         </SwiperSlide>
-                        <SwiperSlide className="slide py-[70px]">
+                        <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
-                                studentImg="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png"
+                                studentImg={st2Img}
                                 studentCourse="UX/UI Student"
-                                studentName="asojcoaocs"
+                                studentName="Moustafa Osama"
                                 studentInfo="Provides educational consulting services for student- clients who want to study in
                                 Canada with the application process."
                                 studentReview={5} />
                         </SwiperSlide>
-                        <SwiperSlide className="slide py-[70px]">
+                        <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
-                                studentImg="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png"
+                                studentImg={st3Img}
                                 studentCourse="UX/UI Student"
-                                studentName="asojcoaocs"
+                                studentName="Reda Khaled"
                                 studentInfo="Provides educational consulting services for student- clients who want to study in
                                 Canada with the application process."
                                 studentReview={5} />
                         </SwiperSlide>
-                        <SwiperSlide className="slide py-[70px]">
+                        <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
-                                studentImg="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png"
+                                studentImg={girlSt1Img}
                                 studentCourse="UX/UI Student"
-                                studentName="asojcoaocs"
+                                studentName="Nada Ahmed"
                                 studentInfo="Provides educational consulting services for student- clients who want to study in
                                 Canada with the application process."
                                 studentReview={4} />
                         </SwiperSlide>
-                        <SwiperSlide className="slide py-[70px]">
+                        <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
-                                studentImg="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-3.png"
+                                studentImg={girlSt2Img}
                                 studentCourse="UX/UI Student"
-                                studentName="asojcoaocs"
+                                studentName="Juiria Nasser"
                                 studentInfo="Provides educational consulting services for student- clients who want to study in
                                 Canada with the application process."
                                 studentReview={4} />

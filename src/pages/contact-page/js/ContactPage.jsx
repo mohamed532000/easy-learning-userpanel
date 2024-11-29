@@ -32,6 +32,7 @@ export  default function ContactPage() {
         return ()=> window.addEventListener("scroll" , handelScroll)
     },[])
     const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(searchQuery)}&output=embed`;
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className={`header w-full bg-[url('https://images.unsplash.com/photo-1544776193-32d404ae608a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1929&q=80')] bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]`}>

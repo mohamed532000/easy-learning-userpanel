@@ -127,24 +127,30 @@ export default function NavBar(){
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="users-icons flex justify-center items-start lg:ml-4">
-                            <Link to="/wishlist-page" className="relative m-2 text-lg transition-all duration-500 hover:translate-y-[-5px]" onClick={()=>{
-                                removeActiveClassFromList(document.querySelector(".list"))
-                            }}>
-                                <i className="fa-regular fa-heart text-white"></i>
-                                {
-                                wishlist &&
-                                <span className="absolute flex justify-center items-center top-[-10px] right-[-10px] bg-red-600 h-[20px] w-fit  text-white rounded-[50%] text-[12px] px-[4px]">{wishlist.length}</span>
-                                }
-                            </Link>
-                            <Link to="/cart-page" className="relative m-2 text-lg transition-all duration-500 hover:translate-y-[-5px]" onClick={()=>{
-                                removeActiveClassFromList(document.querySelector(".list"));
-                            }}>
-                                <i className="fa-brands fa-opencart text-white"></i>
-                                {
-                                cart &&
-                                <span className="absolute flex justify-center items-center top-[-10px] right-[-10px] bg-red-600 h-[20px] w-fit  text-white rounded-[50%] text-[12px] px-[4px]">{cart.length}</span>
-                                }
-                            </Link>
+                            {
+                                userAccount
+                                &&
+                                <>
+                                    <Link to="/wishlist-page" className="relative m-2 text-lg transition-all duration-500 hover:translate-y-[-5px]" onClick={()=>{
+                                        removeActiveClassFromList(document.querySelector(".list"))
+                                    }}>
+                                        <i className="fa-regular fa-heart text-white"></i>
+                                        {
+                                        wishlist &&
+                                        <span className="absolute flex justify-center items-center top-[-10px] right-[-10px] bg-red-600 h-[20px] w-fit  text-white rounded-[50%] text-[12px] px-[4px]">{wishlist.length}</span>
+                                        }
+                                    </Link>
+                                    <Link to="/cart-page" className="relative m-2 text-lg transition-all duration-500 hover:translate-y-[-5px]" onClick={()=>{
+                                        removeActiveClassFromList(document.querySelector(".list"));
+                                    }}>
+                                        <i className="fa-brands fa-opencart text-white"></i>
+                                        {
+                                        cart &&
+                                        <span className="absolute flex justify-center items-center top-[-10px] right-[-10px] bg-red-600 h-[20px] w-fit  text-white rounded-[50%] text-[12px] px-[4px]">{cart.length}</span>
+                                        }
+                                    </Link>
+                                </>
+                            }
                             {userAccount 
                             ? 
                             <>

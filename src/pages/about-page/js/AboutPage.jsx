@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import GoBtn from "../../../components/go-btn/js/GoBtn";
+import headerImg from "../../../media/images/header-images/about-header.webp"
 export default function AboutPage() {
     useEffect(()=>{
         let aLetter = document.querySelector(".event-word .events-letter-a");
@@ -25,9 +26,12 @@ export default function AboutPage() {
         window.addEventListener("scroll" , handelScroll);
         return ()=> window.addEventListener("scroll" , handelScroll);
     },[])
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return(
         <>
-            <div className="header w-full bg-[url('https://images.unsplash.com/photo-1551822620-ac3afd8acd1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]">
+            <div className="header w-full bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]"
+            style={{backgroundImage : `url("${headerImg}")`}}
+            >
                 <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
                     <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px] md:tracking-[30px] lg:tracking-[30px]">
                         <span className="relative inline-block transition-all duration-500 ease-linear font-bold events-letter-a">A</span>

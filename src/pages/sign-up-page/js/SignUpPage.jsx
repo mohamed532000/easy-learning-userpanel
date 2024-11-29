@@ -1,5 +1,5 @@
 import "../css/sign-up.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link , useNavigate } from "react-router-dom";
 import { auth } from "../../../project-api/Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -24,11 +24,13 @@ export  default function SignUpPage() {
     let signUpFunc = async ()=>{
         try {
             if(
+                
                 name.match(validName) &&
                 phone.match(validPhone) &&
                 email.match(validEmail) &&
                 passowrd.match(hasLetter) &&
                 passowrd.match(hasNumbers)){
+                console.log(name , email , passowrd)
                 await createUserWithEmailAndPassword(auth , email , passowrd);
                 navigate("/sign-in-page")
             }
@@ -36,6 +38,7 @@ export  default function SignUpPage() {
             setActivityWrongMessage(true);
         }
     };
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className="sign-up-section py-[100px] flex justify-center items-center">

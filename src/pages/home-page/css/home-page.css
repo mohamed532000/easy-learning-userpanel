@@ -69,3 +69,6 @@
     background-color: #0a033c;
     color: white;
 }
+.reviews-card-swiper-slide {
+    display: flex !important;
+}

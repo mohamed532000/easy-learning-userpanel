@@ -6,6 +6,7 @@ import SectionTitle from "../../../components/section-title/js/SectionTitle";
 import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
+import headerImg from "../../../media/images/header-images/courses-header.webp"
 export default function CoursesPage() {
     let [courses , setCourses] = useState();
     let [filtredCourses , setFiltredCourses] = useState()
@@ -60,7 +61,6 @@ export default function CoursesPage() {
             let data = snapshot.val();
             let coursesData = data.courses;
             let instructorsData = data.instructors;
-            console.log(data)
             setLoading(false)
             setCourses(coursesData);
             setFiltredCourses(coursesData);
@@ -87,7 +87,7 @@ export default function CoursesPage() {
             setAllInstructors(Array.from(new Set(instructors)));
             });
     }
-
+    useEffect(() => window.scrollTo(0 , 0) , []);
     // useEffect(()=>{
     // let fetchNewData = async ()=>{
     //     let api_url2 = `http://localhost:4000/courses?${catFilter ? `category=${catFilter}` : ""}&${langFilter ? `language=${langFilter}` : ""}&${priceFilter ? `price=${priceFilter}` : ""}&${levelFilter ? `level=${levelFilter}` : ""}&${rateFilter ? `rating=${rateFilter}`: ""}&${instructorFilter ? `mainInstructorCourse.name=${instructorFilter}` : ""}`;
@@ -96,9 +96,13 @@ export default function CoursesPage() {
     // }
     // fetchNewData()
     // },[courses, catFilter, langFilter, priceFilter, levelFilter, rateFilter, instructorFilter]);
-
+    const handleToggleFilterSidebar = () => {
+        document.querySelector(".filter-side").classList.toggle("active");
+    }
+    const handleCloseFilterSidebar = () => {
+        document.querySelector(".filter-side").classList.remove("active");
+    }
     useEffect(() => {
-        // Use the 'filter' function to filter the courses based on filter criteria.
         const filtered = courses &&  courses.filter(course => {
             return (
                 (!catFilter || course.overview.category === catFilter) &&
@@ -109,15 +113,14 @@ export default function CoursesPage() {
                 (!instructorFilter || course.instructor.instructor_name === instructorFilter)
             );
         });
-    
-        // Set the filtered courses in the 'filteredCourses' state.
         setFiltredCourses(filtered);
-        console.log(catFilter)
+        handleCloseFilterSidebar();
     }, [courses, catFilter, langFilter, priceFilter, levelFilter, rateFilter, instructorFilter]);
-
     return (
         <>
-            <div className="header w-full after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh] bg-[url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-no-repeat bg-cover bg-center">
+            <div className="header w-full after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh] bg-no-repeat bg-cover bg-center"
+            style={{backgroundImage : `url("${headerImg}")`}}
+            >
                 <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
                     <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px] md:tracking-[30px] font-bold lg:tracking-[30px]">
                         <span className="relative inline-block transition-all duration-500 ease-linear events-letter-c">C</span>
@@ -138,7 +141,8 @@ export default function CoursesPage() {
                         <div className="filter-div flex justify-end relative z-[99] lg:hidden w-full p-2 mb-2">
                             <button className="filter-btn w-[200px] flex justify-center items-center py-2 bg-blue-600 rounded-sm lg:invisible" 
                             onClick={()=>{
-                                document.querySelector(".filter-side").classList.toggle("active");
+                                // document.querySelector(".filter-side").classList.toggle("active");
+                                handleToggleFilterSidebar();
                             }}>
                                 <p className="text-white text-[16px] tracking-wide">Filter With</p>
                                 <i className="fa-solid fa-filter text-white ml-1 text-lg"></i>

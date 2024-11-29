@@ -40,7 +40,11 @@ export default function CourseCard({courseId , courseImg , courseLevel , courseC
                 <div className="course-info px-2 relative w-full  flex flex-col justify-start items-start">
                     <h2 className="course-title bg-blue-300 text-blue-600 rounded-sm px-[4px] py-[2px] mt-[10px]">{courseLevel}</h2>
                     <h2 className="course-cat text-blue-500 font-bold tracking-wide my-[2px]">{courseCategory}</h2>
-                    <h2 className="course-title my-[2px] text-xl font-bold">{courseTitle}</h2>
+                    <h2 className="course-title my-[2px] text-xl font-bold">
+                        <Link to={`/about-course/${courseId}`}>
+                        {courseTitle}
+                        </Link>
+                    </h2>
                     <p className="course-info my-[2px] text-gray-500">{courseInfo}</p>
                     <p className={`course-price my-[2px] text-xl font-bold tracking-wide ${typeof coursePrice === "number" ? "text-orange-500" : "text-slate-500"}`}>{coursePrice}{typeof coursePrice === "number" && "$"}</p>
                 </div>

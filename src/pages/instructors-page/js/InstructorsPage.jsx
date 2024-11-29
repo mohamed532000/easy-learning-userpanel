@@ -17,6 +17,7 @@ export default function InstructorsPage() {
             setLoading(false)
         });
     },[])
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <PageHeading headingImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/banner/instructor.png"/>

@@ -410,9 +410,7 @@ export default function CourseDetailsPage(){
             }
             </div>
             <AdditionProductAgainAlert status={additionAgainStatus}/>
-
             <VideoPlayPopub VideoPlayPopubStatus={VideoPlayPopubStatus} hideVideoPlayFunc={hideVideoPlayFunc} src={VideoPlayPopubSrc}/>
-
             <LoginPopub status={activeLogin} closePopubFun={closeLoginPopubFunc}/>
         </>
     )

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 export default function Footer (){
+    const date = new Date();
+    const currentYear = date.getFullYear();
     return (
         <>
             <div className="footer bg-[#f5edfe] pt-8 flex relative w-full flex-col justify-center items-center">
@@ -52,9 +54,7 @@ export default function Footer (){
                     </div>
                     <div className="col flex flex-col my-4 px-4 md:my-0 md:px-0 lg:my-0 lg:px-0 justify-start items-start">
                         <h2 className="col-title text-black text-xl font-bold">Quick links</h2>
-                        <Link to="/" className=" mt-3 text-lg text-slate-900">Course</Link>
                         <Link to="/" className=" mt-3 text-lg text-slate-900">Courses</Link>
-                        <Link to="/" className=" mt-3 text-lg text-slate-900">Shop</Link>
                         <Link to="/" className=" mt-3 text-lg text-slate-900">Testimonial</Link>
                         <Link to="/" className=" mt-3 text-lg text-slate-900">Career</Link>
                     </div>
@@ -69,7 +69,7 @@ export default function Footer (){
                     </div>
                 </div>
                 <div className="flex justify-center items-center relative w-full py-5 border-t border-slate-300">
-                    <p>© 2021 Edugo.com All Right Reserved</p>
+                    <p>© {currentYear} Mohamed Ezat All Right Reserved</p>
                 </div>
             </div>
         </>

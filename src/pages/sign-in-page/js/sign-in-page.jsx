@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { additionUser } from "../../../project-actions/UserAccountActions";
@@ -30,6 +30,7 @@ export  default function SignInPage() {
     let removeActivityWrongMessage = ()=>{
         setActivityWrongMessage(false);
     }
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className="sign-up-section py-[100px] flex justify-center items-center">

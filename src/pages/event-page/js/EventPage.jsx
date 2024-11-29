@@ -43,6 +43,7 @@ export default function EventPage() {
         window.addEventListener("scroll" , handelScroll)
         return ()=> window.addEventListener("scroll" , handelScroll)
     },[])
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className="header w-full bg-[url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]">

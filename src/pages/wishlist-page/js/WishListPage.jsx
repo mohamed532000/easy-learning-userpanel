@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import emptyWishlist from "../../../media/images/empty-wishlist.png";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFromWishlist } from "../../../project-actions/WishlistActions";
+import { useEffect } from "react";
 export default function WishListPage() {
     let wishlist = useSelector(state => state.wishlistReducer);
     let dispatch = useDispatch()
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className="cart-section relative w-full flex flex-col justify-center items-center pt-[100px] pb-[200px]">
@@ -52,7 +54,7 @@ export default function WishListPage() {
                         </tbody>
                     </table>
                     <Link to="/courses-page" className="cta relative">
-                        <span className="hover-underline-animation relative text-[14px] pb-[8px] pr-[15px] uppercase tracking-[5px] after:absolute after:w-full  after:h-[2px] after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-[.4s] ease-out "> Shopping </span>
+                        <span className="hover-underline-animation relative text-[14px] pb-[8px] pr-[15px] uppercase tracking-[5px] after:absolute after:w-full  after:h-[2px] after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-[.4s] ease-out "> Explore </span>
                         <i className="fa-solid fa-arrow-right-long text-slate-400 transition-all duration-300"></i>
                     </Link>
                     </>
@@ -60,7 +62,7 @@ export default function WishListPage() {
                     <div className="empty-wishlist-div flex flex-col relative w-full py-[30px] justify-center items-center">
                         <img loading="lazy"src={emptyWishlist} alt="empty-wishlist-img" className="w-[200px]" />
                         <h2 className="text-2xl my-[20px] tracking-wide">Your WishList is Empty!</h2>
-                        <Link to="/courses-page" className="w--fit py-2 px-4 flex justify-center items-center transition-all duration-500 hover:bg-[#40247c] hover:translate-y-[-3px] shadow-sm hover:shadow-slate-400 bg-slate-700 text-white rounded-lg">Shopping</Link>
+                        <Link to="/courses-page" className="w--fit py-2 px-4 flex justify-center items-center transition-all duration-500 hover:bg-[#40247c] hover:translate-y-[-3px] shadow-sm hover:shadow-slate-400 bg-slate-700 text-white rounded-lg">Explore</Link>
                     </div>
                     }
                 </div>

@@ -5,6 +5,7 @@ import StudentFedbackCard from "../../../components/testmonial-page-components/s
 import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
+import headerImg from "../../../media/images/header-images/testmonials-header.webp"
 
 export default function TestmonialsPage() {
     let [students , setStudents] = useState();
@@ -60,9 +61,12 @@ export default function TestmonialsPage() {
             setLoading(false)
         })
     }
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
-            <div className="header w-full bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]">
+            <div className="header w-full bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]"
+            style={{backgroundImage : `url("${headerImg}")`}}
+            >
                     <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
                         <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px]">
                             <span className="relative inline-block transition-all duration-500 ease-linear events-letter-t">T</span>

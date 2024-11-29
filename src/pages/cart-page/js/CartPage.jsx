@@ -1,7 +1,7 @@
 import "../css/cart-page.css";
 import { Link } from "react-router-dom";
 import emptyCartImg from "../../../media/images/empty-cart.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DeleteProductAlert from "../../../components/cart-page-components/delete-product-alert/js/DeleteProductAlert";
 import { useSelector } from "react-redux";
 import GoBtn from "../../../components/go-btn/js/GoBtn";
@@ -9,6 +9,7 @@ export default function CartPage() {
     let cart = useSelector(state => state.cartReducer);
     let [courseWhichDelete , setCourseWhichDelete] = useState();
     let [courseName , setCourseName] = useState("");
+    useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
             <div className="cart-section relative w-full flex flex-col justify-center items-center pt-[100px] pb-[200px]">
@@ -59,7 +60,7 @@ export default function CartPage() {
                     <div className="empty-cart-div flex flex-col relative w-full py-[30px] justify-center items-center">
                         <img loading="lazy"src={emptyCartImg} alt="empty-cart-img" className="w-[200px]" />
                         <h2 className="text-2xl my-[20px] tracking-wide">Your Cart is Empty!</h2>
-                        <GoBtn btnText="Shop Now" btnPath="/courses-page"/>
+                        <GoBtn btnText="Explore" btnPath="/courses-page"/>
                     </div>
                     }
                 </div>
