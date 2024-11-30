@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import ConfirmSignOut from "../../confirm-sign-out/js/ConfirmSignOut";
+import logo from "../../../media/images/footer-logo.webp";
 export default function NavBar(){
     let [activeAccountList , setActiveAccountList] = useState(false)
     let cart = useSelector(state => state.cartReducer);
@@ -65,7 +66,7 @@ export default function NavBar(){
             : "bg-transparent"} transition-all duration-500`}>
                 <div className="nav-container w-[90%] mx-auto py-2 flex justify-between items-center">
                     <Link to="/">
-                        <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/footer-logo.svg" alt="logo" className="w-[150px]" />
+                        <img loading="lazy"src={logo} alt="logo" className="w-[150px]" />
                     </Link>
                     <div className="list bg-[#1a2c3c78] backdrop-blur-[3px] absolute flex flex-col transition-all duration-500 invisible opacity-0 justify-center items-center  w-full top-0 z-50 h-[100vh] left-0 lg:bg-transparent lg:backdrop-blur-0 lg:relative lg:flex-row lg:justify-between lg:h-auto lg:w-auto lg:opacity-100 lg:visible">
                         <i className="fa-solid fa-xmark text-white cursor-pointer absolute top-3 right-3 text-xl lg:hidden" onClick={()=>{
