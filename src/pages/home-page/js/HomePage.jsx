@@ -133,13 +133,13 @@ export default function HomePage() {
             </div>
             <div className="explore-courses relative w-full flex flex-col justify-between items-center my-8">
                 <SectionTitle title="Explore Our Categories"/>
-                <div className="cards-container py-5 mt-16 relative w-[90%] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center gap-8 ">
+                <div className="cards-container py-5 mt-16 relative w-[90%] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center gap-8 overflow-hidden">
                     {allCoursesCategories && allCoursesCategories.map((cat , index) =>{
                         let coursesOfThisCat = allCourses && allCourses.filter(course=>{
                             return course.overview.category === cat;
                         })
                         return (
-                            <div key={index} className="relative mx-auto md:mx-0 lg:mx0 shadow-md shadow-slate-300 flex flex-col justify-center items-center w-[200px] py-5 rounded-lg transition-all duration-500 hover:translate-y-[-3px]">
+                            <div data-aos="zoom-in-up" key={index} className="relative mx-auto md:mx-0 lg:mx0 shadow-md shadow-slate-300 flex flex-col justify-center items-center w-[200px] py-5 rounded-lg transition-all duration-500 hover:translate-y-[-3px]">
                                 <div className="card-img my-2 flex justify-center items-center bg-slate-200 p-4 rounded-full">
                                 <img loading="lazy" src={courseImg} alt="card-img" className="w-[20px]"/>
                                 </div>
@@ -153,11 +153,11 @@ export default function HomePage() {
                     })}
                 </div>
                 <div className="offer-container w-[90%] flex flex-col justify-center items-center md:flex-col lg:flex-row md:justify-center lg:justify-between md:items-center lg:items-center py-[50px] my-[50px]">
-                    <div className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[500px] lg:h-400px">
+                    <div data-aos="fade-left" className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[500px] lg:h-400px">
                         <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/home-1/advisor.png" alt="personal img" className="absolute top-0 left-0 w-full h-full"/>
                         <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/home-1/advisor-sm-1.svg"/>
                     </div>
-                    <div className="offer-text relative w-[90%] md:w-[500px] lg:w-[500px]">
+                    <div data-aos="fade-right" className="offer-text relative w-[90%] md:w-[500px] lg:w-[500px]">
                         <h2 className="offer-title text-3xl">We Offering Live Coaching by Skilled Advisors</h2>
                         <p className="my-5">Education also provides educational consulting services for student- clients who want to study in Canada, and require help with the application process.</p>
                         <p className="mt-10">Consulting services for student- clients who want to study in Canada, and require help with the application process.</p>
@@ -178,8 +178,8 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="offer-container w-[90%] flex flex-col justify-center items-center md:flex-col lg:flex-row md:justify-center lg:justify-between md:items-center lg:items-center py-[50px] my-[50px]">
-                    <div className="offer-text relative w-[90%] md:w-[500px] lg:w-[500px]">
+                <div className="offer-container overflow-hidden w-[90%] flex flex-col justify-center items-center md:flex-col lg:flex-row md:justify-center lg:justify-between md:items-center lg:items-center py-[50px] my-[50px]">
+                    <div data-aos="fade-right" className="offer-text relative w-[90%] md:w-[500px] lg:w-[500px]">
                         <h2 className="offer-title text-3xl">One Platfrom Many Courses and E-book For Yous</h2>
                         <p className="my-5">Education also provides educational consulting services for student- clients who want to study in Canada, the application process.</p>
                         <p className="mt-10">Provides educational consulting services for student- clients who want to study in require help with the application process.</p>
@@ -198,7 +198,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[450px] lg:h-450px">
+                    <div data-aos="fade-left" className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[450px] lg:h-450px">
                         <img loading="lazy"src="https://pngimg.com/uploads/thinking_man/thinking_man_PNG11606.png" alt="personal img" className="absolute top-0 left-0 w-full h-full"/>
                         <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/ebook-sm-1.svg"/>
                         <div className="absolute w-full md:w-[250px] lg:w-[250px] py-2 px-2 bottom-[10px] right-[10px] rounded bg-white flex justify-start items-center">
@@ -211,11 +211,11 @@ export default function HomePage() {
             <div className="choose-us-section relative w-full flex flex-col justify-center items-center my-8">
                 <SectionTitle title="Why Choose Us" />
                 <div className="choose-us-container w-[90%] flex flex-col md:flex-row lg:flex-row justify-between items-center py-5 my-5">
-                    <div className="choose-img relative w-full md:w-[400px] lg:w-[400px] h-[450px]">
+                    <div data-aos="fade-left" className="choose-img relative w-full md:w-[400px] lg:w-[400px] h-[450px]">
                         <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/choose-us.png" alt=""  className="absolute w-full h-full top-0 left-0"/>
                         <ImgIcon styleClasses="absolute z-10 right-[20px] bg-[#272f62] rounded-full" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/question-mark.svg" />
                     </div>
-                    <div className="choose-text flex flex-col w-full md:w-[500px] lg:w-[500px]">
+                    <div data-aos="fade-right" className="choose-text flex flex-col w-full md:w-[500px] lg:w-[500px]">
                         <div className="text-box transition-all duration-500 hover:translate-x-1 flex flex-col md:flex-row lg:flex-row text-center md:text-left lg:text-left items-center p-4 rounded-lg shadow-sm shadow-slate-400 my-4">
                             <ImgIcon styleClasses="bg-red-200" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/choose-us-1.svg"/>
                             <div className="text-content relative ml-0 md:ml-[30px] lg:ml-[30px] mt-4 md:mt-0 lg:mt-0 flex flex-col">
@@ -241,8 +241,8 @@ export default function HomePage() {
                 </div>
             </div>            
             <div className="student-say-section flex flex-col justify-center items-center">
-                <SectionTitle title="Our Students Say" />
-                <div className="students-sayes-container w-[90%] py-3">
+                <SectionTitle animate={"fade-down"} title="Our Students Say" />
+                <div data-aos="fade-up" className="students-sayes-container w-[90%] py-3">
                     <Swiper
                         className="parent-of-slides"
                         {...params}
@@ -310,7 +310,7 @@ export default function HomePage() {
                         }}>All Courses</li>
                         {allCategoriesOfTopRated && allCategoriesOfTopRated.map((cat , index) => {
                             return (
-                                <li key={index} className="mr-3 transition-all duration-500 text-[15px] py-3 px-5 cursor-pointer" onClick={()=>{
+                                <li data-aos="zoom-in" key={index} className="mr-3 transition-all duration-500 text-[15px] py-3 px-5 cursor-pointer" onClick={()=>{
                                     setCatFilter(cat);
                                 }}>{cat}</li>
                             )
@@ -323,7 +323,8 @@ export default function HomePage() {
                     filtredCourses && filtredCourses.length > 0 ? filtredCourses.map(course =>{
                         let {id , poster , info , rating , level , category , price} = course.overview;
                         return (
-                            <CourseCard 
+                            <CourseCard
+                                animate = {"zoom-in"} 
                                 key={id}
                                 courseId={id}
                                 courseImg={poster}
@@ -344,7 +345,7 @@ export default function HomePage() {
                     </div>
                 }
                 </div>
-                <DarkBtn  pathname="courses-page" btnText="Explore Courses" />
+                <DarkBtn animate="fade-up" pathname="courses-page" btnText="Explore Courses" />
             </div>
             
         </>

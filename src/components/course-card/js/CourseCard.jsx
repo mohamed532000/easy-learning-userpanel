@@ -13,7 +13,7 @@ CourseCard.propTypes = {
     rateCount : PropTypes.number.isRequired,
     rate : PropTypes.bool.isRequired,
 }
-export default function CourseCard({courseId , courseImg , courseLevel , courseCategory , courseTitle , courseInfo , coursePrice , rateCount}) {
+export default function CourseCard({courseId , courseImg , courseLevel , courseCategory , courseTitle , courseInfo , coursePrice , rateCount , animate}) {
     function rate(star , emtyStar , rating) {
         let rateCount = 5-rating;
         let stars = [];
@@ -32,7 +32,7 @@ export default function CourseCard({courseId , courseImg , courseLevel , courseC
     }
     return (
         <>
-            <div className="course-card sm2:w-full h-fit sm:w-[400px] md:w-[280px]  mb-5 shadow-md shadow-slate-200 relative overflow-hidden flex flex-col">
+            <div data-aos={animate ? animate : ""} className="course-card sm2:w-full h-fit sm:w-[400px] md:w-[280px]  mb-5 shadow-md shadow-slate-200 relative overflow-hidden flex flex-col">
                 <div className="course-img relative overflow-hidden sm:w-full h-[170px]">
                     <img loading="lazy"src={courseImg} alt="course-img" className="absolute top-0 left-0 w-full h-full transition-all duration-700" />
                     <Link to={`/about-course/${courseId}`} className="absolute top-0 left-0 w-full h-full"></Link>

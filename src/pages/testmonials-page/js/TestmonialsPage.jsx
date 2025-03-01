@@ -6,52 +6,13 @@ import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
 import headerImg from "../../../media/images/header-images/testmonials-header.webp"
+import PageHeader from "../../../components/page-header/PageHeader";
 
 export default function TestmonialsPage() {
     let [students , setStudents] = useState();
     let [loading , setLoading] = useState(true);
     useEffect(()=>{
-        let tLetter = document.querySelector(".event-word .events-letter-t");
-        let eLetter = document.querySelector(".event-word .events-letter-e");
-        let sLetter = document.querySelector(".event-word .events-letter-s");
-        let t2Letter = document.querySelector(".event-word .events-letter-t-2");
-        let mLetter = document.querySelector(".event-word .events-letter-m");
-        let oLetter = document.querySelector(".event-word .events-letter-o");
-        let nLetter = document.querySelector(".event-word .events-letter-n");
-        let iLetter = document.querySelector(".event-word .events-letter-i");
-        let aLetter = document.querySelector(".event-word .events-letter-a");
-        let lLetter = document.querySelector(".event-word .events-letter-l");
-        let s2Letter = document.querySelector(".event-word .events-letter-s-2");
-
         fetchData()
-        function handelScroll(){
-            tLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            eLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            sLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            t2Letter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            mLetter.style.transform = `translateY(${-window.scrollY-30}px)`;
-            oLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            nLetter.style.transform = `translateY(${-window.scrollY-25}px)`;
-            iLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            aLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            lLetter.style.transform = `translateY(${-window.scrollY-40}px)`;
-            s2Letter.style.transform = `translateY(${-window.scrollY-10}px)`;
-            if(window.scrollY === 0) {
-                tLetter.style.transform = `translateY(0)`;
-                eLetter.style.transform = `translateY(0)`;
-                sLetter.style.transform = `translateY(0)`;
-                t2Letter.style.transform = `translateY(0)`;
-                mLetter.style.transform = `translateY(0)`;
-                oLetter.style.transform = `translateY(0)`;
-                nLetter.style.transform = `translateY(0)`;
-                iLetter.style.transform = `translateY(0)`;
-                aLetter.style.transform = `translateY(0)`;
-                lLetter.style.transform = `translateY(0)`;
-                s2Letter.style.transform = `translateY(0)`;
-            }
-        }
-        window.addEventListener("scroll" , handelScroll);
-        return ()=>window.addEventListener("scroll" , handelScroll);
     },[]);
     let fetchData = ()=>{
         onValue(ref(database) , (snapshot)=>{
@@ -64,26 +25,11 @@ export default function TestmonialsPage() {
     useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
-            <div className="header w-full bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]"
-            style={{backgroundImage : `url("${headerImg}")`}}
-            >
-                    <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
-                        <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px]">
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-t">T</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-e">E</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-s">S</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-t-2">T</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-m">M</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-o">O</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-n">N</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-i">I</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-a">A</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-l">L</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear events-letter-s-2">S</span>
-                        </h2>
-                        <p className="my-3 leading-7 text-white text-center">Join a vibrant community of learners from around the world. Our events bring together diverse voices, experiences, and cultures, creating an enriching tapestry of ideas and insights that will broaden your horizons.</p>
-                    </div>
-            </div>
+            <PageHeader
+            headerImg = {headerImg}
+            headerLetters = {["T" , "e" , "s" , "t" , "m" , "o" , "n" , "i" , "a" , "l" , "s"]}
+            headerDescription = {"Hear from our happy learners! Our testimonials showcase real experiences from students who have benefited from our courses."}
+            />
             <div className="students-section relative w-full flex flex-col justify-center items-center">
                 <SectionTitle title="Our Students Say" />
                 <p className=" w-full lg:w-[500px] text-slate-400 text-center">Especially in the beginning. Dont waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha.</p>
@@ -93,6 +39,7 @@ export default function TestmonialsPage() {
                     students && students.map(student=>{
                         return (
                             <StudentOpinionCard
+                            animate={"zoom-in"}
                             key={student.id}  
                             studentName={student.studentName}
                             studenImg={student.studentImg}
@@ -110,6 +57,7 @@ export default function TestmonialsPage() {
                 students && students.map(student=>{
                         return (
                             <StudentFedbackCard
+                            animate={"zoom-in"}
                             key={student.id}  
                             studentName={student.studentName}
                             studenImg={student.studentImg}

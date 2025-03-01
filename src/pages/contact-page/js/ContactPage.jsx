@@ -1,55 +1,20 @@
 import { useState , useEffect } from "react";
-
+import headerImg from "../../../media/images/header-images/photo-1544776193-32d404ae608a.webp"
+import PageHeader from "../../../components/page-header/PageHeader";
 export  default function ContactPage() {
     const [searchQuery, setSearchQuery] = useState("");
     const handleSearchInputChange = (event) => {
         setSearchQuery(event.target.value);
     };
-    useEffect(()=>{
-        let cLetter = document.querySelector(".contact-word .events-letter-c");
-        let oLetter = document.querySelector(".contact-word .events-letter-o");
-        let nLetter = document.querySelector(".contact-word .events-letter-n");
-        let tLetter = document.querySelector(".contact-word .events-letter-t");
-        let aLetter = document.querySelector(".contact-word .events-letter-a");
-        let c2Letter = document.querySelector(".contact-word .events-letter-c-2");
-        let t2Letter = document.querySelector(".contact-word .events-letter-t-2");
-        let allLetters = document.querySelectorAll(".contact-word .letter")
-        function handelScroll(){
-            cLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            oLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            nLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            tLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            aLetter.style.transform = `translateY(${-window.scrollY-30}px)`;
-            c2Letter.style.transform = `translateY(${-window.scrollY}px)`;
-            t2Letter.style.transform = `translateY(${-window.scrollY}px)`;
-            if(window.scrollY === 0) {
-                allLetters.forEach(letter => {
-                    letter.style.transform = `translateY(0)`;
-                });
-            }
-        }
-        window.addEventListener("scroll" , handelScroll)
-        return ()=> window.addEventListener("scroll" , handelScroll)
-    },[])
     const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(searchQuery)}&output=embed`;
     useEffect(() => window.scrollTo(0 , 0) , []);
     return (
         <>
-            <div className={`header w-full bg-[url('https://images.unsplash.com/photo-1544776193-32d404ae608a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1929&q=80')] bg-no-repeat bg-cover bg-center after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]`}>
-                    {/* <img loading="lazy"src="" alt="header-img" className="absolute top-0 left-0 w-full h-full"/> */}
-                    <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
-                        <h2 className="contact-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px] md:tracking-[30px] lg:tracking-[30px]">
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-c">C</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-o">O</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-n">N</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-t">T</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-a">A</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-c-2">C</span>
-                            <span className="relative inline-block transition-all duration-500 ease-linear letter events-letter-t-2">T</span>
-                        </h2>
-                        <p className="my-3 leading-7 text-white text-center">We love hearing from you. Do not hesitate to pick up the phone and give us a call. We are here to listen, assist, and guide you every step of the way , Follow us on social media to stay updated on the latest news, trends, and insights. We love staying connected with our valued clients.</p>
-                    </div>
-            </div>
+            <PageHeader
+            headerImg = {headerImg}
+            headerLetters = {["C" , "o" , "n" , "t" , "a" , "c" , "t"]}
+            headerDescription = {"Get in touch with us! Whether you have questions, feedback, or inquiries, we're here to help."}
+            />
             <div className="contact-section relative w-full py-6 flex flex-col justify-center items-center">
                 <div className="contact-container flex flex-col md:flex-row lg:flex-row justify-center items-center w-[90%] relative py-[40px]">
                     <div className="contact-text flex justify-center items-center md:justify-start md:items-start flex-col relative w-full md:w-[40%]">

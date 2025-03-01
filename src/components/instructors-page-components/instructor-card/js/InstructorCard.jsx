@@ -10,10 +10,10 @@ InstructorCard.propTypes = {
     instructorLink : PropTypes.bool.isRequired
 }
 
-export default function InstructorCard({instructorId , instructorImg , instructorName , course , instructorEmail , instructorLink}) {
+export default function InstructorCard({instructorId , instructorImg , instructorName , course , instructorEmail , instructorLink , animate}) {
     return (
         <>
-            <div className="instructor-card w-full md:w-auto lg:w-auto overflow-hidden pt-5 mb-4 bg-slate-100 relative flex flex-col justify-center items-center rounded-lg bg-gradient-to-tr from-[#059095] to-[#8988f4] shadow-md shadow-stone-800">
+            <div data-aos={animate ? animate : ""} className="instructor-card w-full md:w-auto lg:w-auto overflow-hidden pt-5 mb-4 bg-slate-100 relative flex flex-col justify-center items-center rounded-lg bg-gradient-to-tr from-[#059095] to-[#8988f4] shadow-md shadow-stone-800">
                 <span className="absolute top-4 left-[50%] translate-x-[-50%] w-[50px] h-[10px] rounded-md bg-gradient-to-tr from-[#1e1a1f] to-[#2b0daa]"></span>
                 <div className="logo relative mt-5 w-[100px]">
                     <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/footer-logo.svg" alt="logo" />

@@ -6,6 +6,7 @@ import { auth } from "../../../project-api/Firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import SignUpPupub from "../../../components/sign-up-popub/js/SignUpPoub";
 import WrongTextSubmession from "../../../components/wrong-text-submession/js/WrongTextSubmession";
+import img from "../../../media/images/privacy-policy-concept-illustration_114360-7853.webp"
 export  default function SignInPage() {
     let [activityWrongMessage , setActivityWrongMessage] = useState();
     let [signupPopubStatus , setSignupPopubStatus] = useState();
@@ -36,7 +37,7 @@ export  default function SignInPage() {
             <div className="sign-up-section py-[100px] flex justify-center items-center">
                 <div className="sign-up-container relative w-[90%] lg:shadow-lg shadow-slate-400 rounded-2xl overflow-hidden bg-white flex justify-center lg:justify-between items-center">
                     <div className="img-side hidden relative w-[70%] bg-white lg:flex justify-center items-center">
-                        <img loading="lazy"src="https://img.freepik.com/free-vector/privacy-policy-concept-illustration_114360-7853.jpg?w=740&t=st=1694830088~exp=1694830688~hmac=337ea44ba837c0cd96d3c5437fa3a3a2bd707645bdc81a67349bc86d32f2daec" alt="" className="w-[400px]"/>
+                        <img loading="lazy"src={img} alt="" className="w-[400px]"/>
                     </div>
                     <div className="form-side rounded-lg lg:rounded-l-[70px] shadow-lg shadow-black relative w-full md:w-[50%] lg:w-[50%] py-[50px] flex flex-col justify-center items-center bg-gradient-to-tr from-[#491767] to-[#035fbb]">
                         <div className="form-title flex flex-col justify-center items-center mb-[20px]">

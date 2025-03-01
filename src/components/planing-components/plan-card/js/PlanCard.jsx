@@ -14,7 +14,7 @@ PlanCard.propTypes = {
     checkoutPlanSection : PropTypes.string
 }
 
-export default function PlanCard({planStatus , planImg , planName , planFeatures , planPrice , loginPopubFunction}) {
+export default function PlanCard({planStatus , planImg , planName , planFeatures , planPrice , loginPopubFunction , animate}) {
     let dispatch = useDispatch();
     let [premium , setPremium] = useState();
     let usersAccounts = useSelector(state => state.user);
@@ -31,7 +31,7 @@ export default function PlanCard({planStatus , planImg , planName , planFeatures
     let planWillAdd = {planName , planFeatures , planPrice , planStatus};
     return (
         <> 
-            <div className="plan-card my-3 md:my-0 lg:my-0 flex flex-col rounded-lg py-3 px-8 transition-all duration-500  shadow-sm hover:shadow-2xl shadow-slate-300 hover:translate-y-[-4px]">
+            <div data-aos={animate ? animate : ""} className="plan-card my-3 md:my-0 lg:my-0 flex flex-col rounded-lg py-3 px-8 transition-all duration-500  shadow-sm hover:shadow-2xl shadow-slate-300 hover:translate-y-[-4px]">
                 <div className="plan-img-and-name flex flex-col">
                     <img loading="lazy"src={planImg} alt="plan-img" className="w-[50px] md:w-[70px] lg:w-[70px]" />
                     <h2 className="plan-name my-4 text-2xl">{planName}</h2>

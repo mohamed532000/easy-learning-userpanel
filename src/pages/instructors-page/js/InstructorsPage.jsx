@@ -29,7 +29,9 @@ export default function InstructorsPage() {
                 loading ? <LoadingData/> :
                 instructorsList && instructorsList.map((instructor)=>{
                     return (
-                        <InstructorCard key={instructor.id}
+                        <InstructorCard 
+                            key={instructor.id}
+                            animate={"fade-up"}
                             instructorId={instructor.id}
                             instructorImg={instructor.instructorImg}
                             instructorName={instructor.instructorName}

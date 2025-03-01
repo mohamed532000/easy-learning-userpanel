@@ -123,10 +123,10 @@ export default function NavBar(){
                             </li>
 
                         </ul>
-                        <div className="search-div my-3 lg:my-0 rounded-full h-[40px] px-2 flex justify-between items-center bg-transparent lg:ml-2 bg-white">
+                        {/* <div className="search-div my-3 lg:my-0 rounded-full h-[40px] px-2 flex justify-between items-center bg-transparent lg:ml-2 bg-white">
                             <input type="text" placeholder="Search" className="indent-2 text-slate-900 h-full  outline-none bg-transparent focus:bg-transparent"/>
                             <i className="fa-solid fa-magnifying-glass"></i>
-                        </div>
+                        </div> */}
                         <div className="users-icons flex justify-center items-start lg:ml-4">
                             {
                                 userAccount

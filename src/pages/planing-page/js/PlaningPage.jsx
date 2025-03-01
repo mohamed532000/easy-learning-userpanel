@@ -46,7 +46,8 @@ export default function PlaningPage() {
                     {plans && plans.map((plan , index)=>{
                         return (
                             <PlanCard
-                                key={index} 
+                                key={index}
+                                animate={"zoom-in"}
                                 planImg={plan.planImg}
                                 planName={plan.planName}
                                 featureStatusImg="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick-2.svg"

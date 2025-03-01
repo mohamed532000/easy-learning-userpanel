@@ -798,7 +798,7 @@
       },
       {
         "id": 2,
-        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget est a odio volutpat blandit. Proin euismod ex quis purus interdum, id convallis elit egestas. Aliquam sit amet lacinia ex. Nullam eget risus nec sem faucibus iaculis. Phasellus vehicula vestibulum odio ac ultricies. In euismod, tellus at volutpat dignissim.",
+        "aboutEvent": "Discover Your Strengths – Identify your unique talents and learn how to maximize them,Boost Your Confidence – Overcome self-doubt and develop a success-oriented mindset,Master Time Management – Learn strategies to stay productive and focused, Set & Achieve Goals – Create a roadmap to personal and professional growth",
         "call": "(+9125) 123 4567",
         "certificate": "no",
         "dayLeft": 20,
@@ -808,7 +808,7 @@
           "Aliquam erat volutpat. Sed tincidunt, urna eu euismod."
         ],
         "eventDate": "20 February, 2023",
-        "eventImg": "https://example.com/event2.jpg",
+        "eventImg": "https://images.pexels.com/photos/7710088/pexels-photo-7710088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "eventInfo": "Join us for an exciting event focused on personal development and self-improvement.",
         "eventLocation": "123 Main Street, Cityville",
         "eventName": "Personal Development Workshop",
@@ -821,7 +821,7 @@
       },
       {
         "id": 3,
-        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed a bibendum elit. Aenean non sapien non arcu malesuada viverra. Fusce nec ultrices mauris. Nulla facilisi. Etiam eget erat id nisl viverra sollicitudin. Ut viverra tincidunt ligula at congue. Sed hendrerit sem vel lacinia posuere.",
+        "aboutEvent": "Are you ready to master the art of digital marketing and boost your career? Join our Digital Marketing Certification Program, where you'll learn the latest strategies, tools, and techniques to succeed in the ever-evolving online world!",
         "call": "(+9125) 987 6543",
         "certificate": "yes",
         "dayLeft": 12,
@@ -831,7 +831,7 @@
           "Phasellus tincidunt arcu non hendrerit."
         ],
         "eventDate": "10 March, 2023",
-        "eventImg": "https://example.com/event3.jpg",
+        "eventImg": "https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "eventInfo": "An educational event offering certification in digital marketing and online advertising.",
         "eventLocation": "789 Elm Street, Riverside",
         "eventName": "Digital Marketing Certification Program",
@@ -844,7 +844,7 @@
       },
       {
         "id": 4,
-        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante vel odio hendrerit, at fringilla purus luctus. Nullam viverra lacus nec malesuada. In eu diam vel lectus vestibulum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce et euismod nisl.",
+        "aboutEvent": "Unleash your creativity and bring your ideas to life with our Graphic Design Workshop! Whether you're a beginner or looking to sharpen your skills, this hands-on workshop will guide you through the fundamentals of design and the latest tools in the industry.",
         "call": "(+9125) 567 8901",
         "certificate": "yes",
         "dayLeft": 25,
@@ -854,7 +854,7 @@
           "Aenean eget bibendum quam. Suspendisse potenti."
         ],
         "eventDate": "5 April, 2023",
-        "eventImg": "https://example.com/event4.jpg",
+        "eventImg": "https://images.pexels.com/photos/6620958/pexels-photo-6620958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "eventInfo": "Discover the world of graphic design and enhance your creative skills.",
         "eventLocation": "456 Oak Avenue, Parkside",
         "eventName": "Graphic Design Workshop",
@@ -862,29 +862,6 @@
           {
             "from": 11,
             "to": 7
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "aboutEvent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex nec eros malesuada vestibulum ac sit amet nisi. Curabitur ut congue sapien. Suspendisse consectetur nec augue a eleifend. Nullam nec nunc sit amet sem tincidunt rhoncus. Vivamus eu odio vel urna aliquet lacinia.",
-        "call": "(+9125) 111 2222",
-        "certificate": "no",
-        "dayLeft": 30,
-        "eventAgenda": [
-          "In euismod a elit eu rhoncus.",
-          "Mauris aliquet, elit id cursus varius, lorem elit id elit.",
-          "Suspendisse sed congue eros."
-        ],
-        "eventDate": "15 May, 2023",
-        "eventImg": "https://example.com/event5.jpg",
-        "eventInfo": "Join us for an exciting event focused on innovation and entrepreneurship.",
-        "eventLocation": "101 Pine Street, Innovation City",
-        "eventName": "Innovation and Entrepreneurship Conference",
-        "eventTime": [
-          {
-            "from": 9,
-            "to": 5
           }
         ]
       }
@@ -953,7 +930,7 @@
       "experiences": 4,
       "grauduated": "yes",
       "id": 5,
-      "instructorImg": "https://tse1.mm.bing.net/th?id=OIP.MXYc6gSd_H6SREsg62LiRAAAAA&pid=Api&P=0&h=180",
+      "instructorImg": "https://images.pexels.com/photos/8549942/pexels-photo-8549942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "instructorName": "Radwa Nasser",
       "language": "english,USA",
       "otherInfo": "Learning programming is hard. Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put it. The sessions with Jascha have been more valuable than eight weeks of my professor's lectures. It's money much better spent!",
@@ -1062,7 +1039,7 @@
       {
         "id": 4,
         "studentCourse": "Art Student",
-        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-4.png",
+        "studentImg": "https://images.pexels.com/photos/1007066/pexels-photo-1007066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "studentName": "Benjamin Turner",
         "studentRateCount": 4,
         "studentSay": "The art course allowed me to explore my creativity and develop my artistic skills. I'm grateful for the experience.",
@@ -1071,7 +1048,7 @@
       {
         "id": 5,
         "studentCourse": "Language Learning Student",
-        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-5.png",
+        "studentImg": "https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "studentName": "Sophia Walker",
         "studentRateCount": 5,
         "studentSay": "I enrolled in a language course, and it was fantastic. The language instructors were patient and engaging.",
@@ -1080,7 +1057,7 @@
       {
         "id": 6,
         "studentCourse": "Business Student",
-        "studentImg": "https://asset.uibucket.net/html/ilearning/assets/images/testimonial/testimonial-6.png",
+        "studentImg": "https://images.pexels.com/photos/3706938/pexels-photo-3706938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "studentName": "William Foster",
         "studentRateCount": 4,
         "studentSay": "The business course was a valuable experience for me. I gained insights into business strategies and management.",

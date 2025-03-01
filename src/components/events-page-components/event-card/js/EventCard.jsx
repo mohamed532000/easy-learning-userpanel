@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import GoBtn from "../../../go-btn/js/GoBtn";
+import { useEffect } from "react";
 EventCard.propTypes = {
     eventId : PropTypes.number.isRequired,
     eventImg : PropTypes.string.isRequired,
@@ -9,13 +10,13 @@ EventCard.propTypes = {
     eventDayLeft : PropTypes.number.isRequired,
     eventLocation : PropTypes.string.isRequired,
 }
-export default function EventCard({eventId ,  eventImg , eventName , eventInfo , eventDate , eventDayLeft , eventLocation}) {
+export default function EventCard({eventId ,  eventImg , eventName , eventInfo , eventDate , eventDayLeft , eventLocation , animate}) {
     return (
         <>
         
-            <div className="event-card my-4 flex flex-col md:flex-row lg:flex-row w-full items-center p-4 shadow-md shadow-slate-400 rounded-2xl">
+            <div data-aos={animate ? animate : ""} className="event-card my-4 flex flex-col md:flex-row lg:flex-row w-full items-center p-4 shadow-md shadow-slate-400 rounded-2xl">
                 <div className="event-img relative w-full md:w-[300px] lg:w-[300px] h-[350px]">
-                    <img loading="lazy"src={eventImg} alt="" className="absolute w-full h-full top-0 left-0"/>
+                    <img loading="lazy"src={eventImg} alt="event img" className="absolute w-full h-full top-0 left-0"/>
                 </div>
                 <div className="flex flex-col justify-start items-start ml-4">
                     <div className="card-header flex flex-col  pt-2 border-b border-slate-400">

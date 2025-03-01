@@ -6,7 +6,7 @@ StudentOpinionCard.propTypes = {
     studentSay : PropTypes.string.isRequired,
     studentRateCount : PropTypes.number.isRequired,
 }
-export default function StudentOpinionCard({studenImg , studentName , studentCourse , studentSay , studentRateCount}) {
+export default function StudentOpinionCard({studenImg , studentName , studentCourse , studentSay , studentRateCount , animate}) {
     function rate(star , emtyStar , rating) {
         let rateCount = 5-rating;
         let stars = [];
@@ -25,7 +25,7 @@ export default function StudentOpinionCard({studenImg , studentName , studentCou
     }
     return (
         <>
-            <div className="student-card flex flex-col w-[340px] m-2 rounded-md shadow-md shadow-slate-300 p-3">
+            <div data-aos={animate ? animate : ""} className="student-card flex flex-col w-[340px] m-2 rounded-md shadow-md shadow-slate-300 p-3">
                 <div className="card-header flex my-2">
                     <div className="student-img relative rounded-full-overflow-hidden w-[100px] h-[100px]">
                         <img loading="lazy"src={studenImg} alt="student-img" />

@@ -1,12 +1,15 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { Suspense, lazy, useEffect } from 'react';
 import Footer from './components/footer/js/Footer';
 import NavBar from './components/navbar/js/NavBar';
 import ToTopBtn from './components/to-top-btn/js/ToTopBtn';
 import Preloader from './components/preloader/js/Preloader';
 // import RequireAuth from './project-actions/RequireAuth';
 import { ProtectRoutes } from './project-actions/ProtectRoutes';
+import AOS from 'aos';
+import "aos/dist/aos.css"; // Import AOS styles
+import AnimationsScroll from './project-actions/InitAppAnimations';
 let HomePage = lazy(()=>import ("./pages/home-page/js/HomePage"));
 let AboutPage = lazy(()=>import ("./pages/about-page/js/AboutPage"));
 let CoursesPage = lazy(()=>import ("./pages/courses-page/js/CoursesPage"));
@@ -26,6 +29,18 @@ let CheckoutPage = lazy(()=>import ("./pages/checkout-page/js/CheckoutPage"));
 // let StudentDahsboard = lazy(()=>import ("./pages/student-dashboard/js/StudentDashboard"));
 // let OwnerDashboard = lazy(()=>import ("./pages/owner-dashboard/js/OwnerDashboard"));
 function App() {
+  const {pathname} = useLocation();
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+  const handleScrollToTop = () => {
+    window.scrollTo(0 , 0);
+  }
+  useEffect(() => handleScrollToTop() , [pathname]);
   return (
     <>
       <NavBar/>
@@ -64,6 +79,7 @@ function App() {
       </Suspense>
       <Footer/>
       <ToTopBtn/>
+      <AnimationsScroll/>
     </>
   )
 }

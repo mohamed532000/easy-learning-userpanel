@@ -10,7 +10,9 @@ import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoginPopub from "../../../components/login-popub/js/LoginPopub";
 import VideoPlayPopub from "../../../components/video-place-popub/js/VideoPlayPopub";
-
+import headerImg from "../../../media/images/header-images/page-title.fc72743c.webp"
+import PageHeader from "../../../components/page-header/PageHeader";
+import relatedCourseImage from "../../../media/images/course-4.webp"
 export default function CourseDetailsPage(){
     let dispatch = useDispatch();
     let [activeLogin , setActiveLogin] = useState();
@@ -101,14 +103,11 @@ export default function CourseDetailsPage(){
     }
     return (
         <>
-            <div className="header w-full bg-[url('https://educal-react.vercel.app/_next/static/media/page-title.fc72743c.jpg')] bg-center bg-no-repeat bg-cover after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh]">
-                <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
-                    <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px] md:tracking-[30px] lg:tracking-[30px]">
-                        Course Details
-                    </h2>
-                    <p className="my-3 leading-7 text-white text-center">Join a vibrant community of learners from around the world. Our events bring together diverse voices, experiences, and cultures, creating an enriching tapestry of ideas and insights that will broaden your horizons.</p>
-                </div>
-            </div>
+            <PageHeader
+                headerImg = {headerImg}
+                headerLetters = {["Course" , "Details"]}
+                headerDescription = {`Join a vibrant community of learners from around the world. Our events bring together diverse voices, experiences, and cultures, creating an enriching tapestry of ideas and insights that will broaden your horizons.`}
+            />
             <div className="details-section py-[50px] relative w-full flex flex-col justify-center items-center">
                 {course && (
                 <div className="details-container relative grid  grid-cols-1 lg:grid-cols-3 w-[90%]">
@@ -386,7 +385,7 @@ export default function CourseDetailsPage(){
                                 <div className="course flex justify-between items-center relative mb-2">
                                     <div className="flex">
                                         <div className="course-img relative w-[60px] h-[60px] rounded-md overflow-hidden mr-4">
-                                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcourse-4.0eee2279.jpg&w=1920&q=75" alt="coursei-img" className="absolute top-0 left-0 w-full h-full"/>
+                                            <img loading="lazy"src={relatedCourseImage} alt="coursei-img" className="absolute top-0 left-0 w-full h-full"/>
                                         </div>
                                         <div className="course-info flex flex-col">
                                             <div className="course-ratt flex">

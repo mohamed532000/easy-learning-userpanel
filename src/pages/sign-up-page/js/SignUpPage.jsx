@@ -4,6 +4,7 @@ import { Link , useNavigate } from "react-router-dom";
 import { auth } from "../../../project-api/Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import WrongTextSubmession from "../../../components/wrong-text-submession/js/WrongTextSubmession";
+import img from "../../../media/images/pexels-photo-2302802.webp"
 export  default function SignUpPage() {
     let navigate = useNavigate();
     let [activityWrongMessage , setActivityWrongMessage] = useState();
@@ -43,7 +44,7 @@ export  default function SignUpPage() {
         <>
             <div className="sign-up-section py-[100px] flex justify-center items-center">
                 <div className="sign-up-container relative w-[90%] shadow-md shadow-slate-700 rounded-2xl overflow-hidden bg-white flex justify-center lg:justify-start items-center">
-                    <img loading="lazy"src="https://images.pexels.com/photos/2302802/pexels-photo-2302802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className="absolute w-full h-full top-0 left-0 z-10"/>
+                    <img loading="lazy"src={img} alt="" className="absolute w-full h-full top-0 left-0 z-10"/>
                     <span className="absolute w-full h-full top-0 right-0 bg-gradient-to-l from-black to-transparent z-20"></span>
                     <div className="form-side relative w-full lg:w-[50%] py-[50px] flex flex-col justify-center items-center z-40">
                         <div className="form-title flex flex-col justify-center items-center mb-[30px]">

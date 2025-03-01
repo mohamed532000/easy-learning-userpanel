@@ -7,6 +7,7 @@ import { database } from "../../../project-api/Firebase";
 import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
 import headerImg from "../../../media/images/header-images/courses-header.webp"
+import PageHeader from "../../../components/page-header/PageHeader";
 export default function CoursesPage() {
     let [courses , setCourses] = useState();
     let [filtredCourses , setFiltredCourses] = useState()
@@ -26,34 +27,6 @@ export default function CoursesPage() {
 
     useEffect(()=>{
         fetchData();
-        let cLetter = document.querySelector(".event-word .events-letter-c");
-        let oLetter = document.querySelector(".event-word .events-letter-o");
-        let uLetter = document.querySelector(".event-word .events-letter-u");
-        let r2Letter = document.querySelector(".event-word .events-letter-r");
-        let sLetter = document.querySelector(".event-word .events-letter-s");
-        let eLetter = document.querySelector(".event-word .events-letter-e");
-        let s2Letter = document.querySelector(".event-word .events-letter-s-2")
-
-        function handelScroll(){
-            cLetter.style.transform = `translateY(${-window.scrollY}px)`;
-            oLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            uLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            r2Letter.style.transform = `translateY(${-window.scrollY}px)`;
-            sLetter.style.transform = `translateY(${-window.scrollY-20}px)`;
-            eLetter.style.transform = `translateY(${-window.scrollY-30}px)`;
-            s2Letter.style.transform = `translateY(${-window.scrollY}px)`;
-            if(window.scrollY === 0) {
-                cLetter.style.transform = `translateY(0)`;
-                oLetter.style.transform = `translateY(0)`;
-                uLetter.style.transform = `translateY(0)`;
-                r2Letter.style.transform = `translateY(0)`;
-                sLetter.style.transform = `translateY(0)`;
-                eLetter.style.transform = `translateY(0)`;
-                s2Letter.style.transform = `translateY(0)`;
-            }
-        }
-        window.addEventListener("scroll" , handelScroll);
-        return ()=> window.addEventListener("scroll" , handelScroll);
     },[]);
 
     let fetchData = async ()=>{
@@ -64,7 +37,7 @@ export default function CoursesPage() {
             setLoading(false)
             setCourses(coursesData);
             setFiltredCourses(coursesData);
-            setInstructors(instructorsData);
+            // setInstructors(instructorsData);
             let categories = coursesData.map(course => {
                 return course.overview.category;
             });
@@ -118,22 +91,11 @@ export default function CoursesPage() {
     }, [courses, catFilter, langFilter, priceFilter, levelFilter, rateFilter, instructorFilter]);
     return (
         <>
-            <div className="header w-full after:absolute after:w-full after:h-full after:bg-black after:opacity-40 flex justify-center items-center h-[100vh] bg-no-repeat bg-cover bg-center"
-            style={{backgroundImage : `url("${headerImg}")`}}
-            >
-                <div className="header z-20 w-full md:w-[50%] lg:w-[50%] text flex flex-col justify-center items-center">
-                    <h2 className="event-word text-white text-center text-4xl md:text-7xl lg:text-7xl mb-5 tracking-[10px] md:tracking-[30px] font-bold lg:tracking-[30px]">
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-c">C</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-o">o</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-u">u</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-r">r</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-s">s</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-e">e</span>
-                        <span className="relative inline-block transition-all duration-500 ease-linear events-letter-s-2">s</span>
-                    </h2>
-                    <p className="my-3 leading-7 text-white text-center">Join a vibrant community of learners from around the world. Our events bring together diverse voices, experiences, and cultures, creating an enriching tapestry of ideas and insights that will broaden your horizons.</p>
-                </div>
-            </div>
+            <PageHeader 
+            headerImg = {headerImg}
+            headerLetters = {["C" , "o" , "u" , "r" , "s" , "e" , "s"]}
+            headerDescription = {"Explore a world of knowledge with our diverse range of courses."}
+            />
             <div className="courses-section relative w-full flex flex-col justify-center items-center py-[20px]">
                 <SectionTitle title="Explore Courses" />
                 <div className="courses-and-filter-container relative py-[50px] w-[95%] flex justify-between items-start">
