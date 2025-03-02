@@ -23,11 +23,11 @@ import girlSt1Img from "../../../media/images/girl-st1.webp";
 import girlSt2Img from "../../../media/images/girl-st2.webp";
 
 export default function HomePage() {
-    let [allCourses , setAllCourses] = useState()
-    let [allCoursesCategories , setAllCoursesCategories] = useState()
+    let [allCourses , setAllCourses] = useState([])
+    let [allCoursesCategories , setAllCoursesCategories] = useState([])
     let [catFilter , setCatFilter] = useState();
-    let [filtredCourses , setFiltredCourses] = useState();
-    let [allCategoriesOfTopRated , setAllCategoriesOfTopRated] = useState();
+    let [filtredCourses , setFiltredCourses] = useState([]);
+    let [allCategoriesOfTopRated , setAllCategoriesOfTopRated] = useState([]);
     let [loading , setLoading] = useState(true);
     let params = {
         breakpoints: {
@@ -141,7 +141,7 @@ export default function HomePage() {
                         return (
                             <div data-aos="zoom-in-up" key={index} className="relative mx-auto md:mx-0 lg:mx0 shadow-md shadow-slate-300 flex flex-col justify-center items-center w-[200px] py-5 rounded-lg transition-all duration-500 hover:translate-y-[-3px]">
                                 <div className="card-img my-2 flex justify-center items-center bg-slate-200 p-4 rounded-full">
-                                <img loading="lazy" src={courseImg} alt="card-img" className="w-[20px]"/>
+                                <img loading="lazy" src={courseImg} alt="card-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <div className="card-info flex flex-col justify-center items-center">
                                     <h2 className="text-xl my-1 mx-1">{cat}</h2>
@@ -164,13 +164,13 @@ export default function HomePage() {
                         <div className="read-more-div flex flex-col justify-start items-start my-3">
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px]"/>
+                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Industry Expert Instructor</h2>
                             </div>
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px]"/>
+                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Industry Expert Instructor</h2>
                             </div>
@@ -186,13 +186,13 @@ export default function HomePage() {
                         <div className="read-more-div flex flex-col justify-start items-start my-3">
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px]"/>
+                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Easy Online Learning Platform</h2>
                             </div>
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px]"/>
+                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Friendly Enviroments & Teachers</h2>
                             </div>
@@ -340,7 +340,7 @@ export default function HomePage() {
                     })
                     :
                     <div className="relative m-auto w-full flex flex-col justify-center items-center">
-                        <img loading="lazy"src={emptyState} alt=""  className="sm2:w-[100px] sm:w-[100px]"/>
+                        <img loading="lazy"src={emptyState} alt=""  className="sm2:w-[100px] sm:w-[100px] h-[100px]"/>
                         <h2 className="mt-10 text-slate-700">no courses yet !</h2>
                     </div>
                 }

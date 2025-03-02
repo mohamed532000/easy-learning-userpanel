@@ -24,7 +24,7 @@ export default function PageHeading({headingImgSrc}) {
                     <h2 className=" text-slate-950 pl-2 text-2xl">{pathName.replace(">","")}</h2>
                 </div>
                 <div className="heading-img hidden md:flex lg:flex relative w-[300px] h-[200px]">
-                    <img loading="lazy"src={headingImgSrc} alt="img" className="absolute top-0 left-0 w-full h-full"/>
+                    <img loading="lazy"src={headingImgSrc} alt="img" className="absolute top-0 left-0 w-full aspect-[16/10]"/>
                 </div>
             </div>
         </div>
