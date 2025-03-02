@@ -18,7 +18,7 @@ export default function Footer (){
                 </div>
                 <div className="footer-container relative my-10 py-5 flex flex-col flex-wrap justify-start items-start w-full md:w-[90%] md:flex-row md:justify-between lg:w-[90%] lg:flex-row lg:justify-between">
                     <div className="col flex flex-col my-4 px-4 md:my-0 md:px-0 lg:my-0 lg:px-0 justify-start items-start">
-                        <img loading="lazy"src={logo} alt="img" className="w-[200px]"/>
+                        <img loading="lazy"src={logo} alt="img" className="w-[200px] h-[60px]"/>
                         <p className="my-4">Ilearning is a registered trademark of ilearning.co</p>
                         <div className="sochial-div flex my-3">
                             <Link to="https://www.facebook.com" className="mr-2 md:mr-4 lg:mr-4 transition-all duration-500 hover:translate-y-[-4px] bg-white shadow-md hover:shadow-slate-400 flex justify-center items-center px-[10px] py-[5px] md:px-[15px] lg:px-[15px] md:py-[10px] lg:py-[10px] rounded-full">

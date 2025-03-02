@@ -8,6 +8,7 @@ import { onValue , ref } from "firebase/database";
 import LoadingData from "../../../components/loading-data/js/LoadingData";
 import headerImg from "../../../media/images/header-images/courses-header.webp"
 import PageHeader from "../../../components/page-header/PageHeader";
+import closeIcon from "../../../media/images/icons/close-square-svgrepo-com.svg"
 export default function CoursesPage() {
     let [courses , setCourses] = useState();
     let [filtredCourses , setFiltredCourses] = useState()
@@ -139,6 +140,8 @@ export default function CoursesPage() {
                         </div>
                     </div>
                     <div className="filter-side z-[999] shadow-md sm2:w-full sm:w-[350px] lg:ml-2 shadow-slate-300 rounded-lg absolute bg-white left-[-300px] opacity-0 transition-all duration-500 lg:opacity-100 lg:left-0 lg:relative flex flex-col p-4">
+                        <img src={closeIcon} alt="close-icon" className="absolute top-0 w-[20px] h-[20px] block md:hidden cursor-pointer" onClick={handleCloseFilterSidebar}/>
+                        {/* <span className="" onClick={handleCloseFilterSidebar}>close</span> */}
                         <div className="search-div flex w-full relative my-3 bg-slate-100">
                             <input type="text"   placeholder="search for Courses..." className="w-full h-[50px] indent-2 transition-all duration-300 outline-none border focus:border-blue-600 bg-transparent"/>
                             <i className="fa-solid fa-magnifying-glass absolute top-[50%] translate-y-[-50%] right-3 text-slate-400"></i>
