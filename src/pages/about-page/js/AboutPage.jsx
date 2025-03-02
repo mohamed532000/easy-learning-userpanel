@@ -3,6 +3,22 @@ import { Link } from "react-router-dom";
 import GoBtn from "../../../components/go-btn/js/GoBtn";
 import headerImg from "../../../media/images/header-images/about-header.webp"
 import PageHeader from "../../../components/page-header/PageHeader";
+import aboutImg1 from "../../../media/images/about-page/about-banner.webp"
+import aboutImg2 from "../../../media/images/about-page/about-banner2.webp"
+import st6 from "../../../media/images/about-page/st6.webp";
+import st7 from "../../../media/images/about-page/st7.webp";
+import st8 from "../../../media/images/about-page/st8.webp";
+import st9 from "../../../media/images/about-page/st9.webp";
+import brand1 from "../../../media/images/about-page/brand-1.webp";
+import brand2 from "../../../media/images/about-page/brand-2.webp";
+import brand3 from "../../../media/images/about-page/brand-3.webp";
+import brand4 from "../../../media/images/about-page/brand-4.webp";
+import brand5 from "../../../media/images/about-page/brand-5.webp";
+import whyusPanner from "../../../media/images/about-page/why-us-banner.webp";
+import whyShapeLine from "../../../media/images/about-page/why-shape-line.webp";
+import whyShapePink from "../../../media/images/about-page/why-shape-pink.webp";
+import bgBanner1 from "../../../media/images/about-page/banner-bg-1.webp";
+import bgBanner2 from "../../../media/images/about-page/banner-bg-2.webp";
 export default function AboutPage() {
     useEffect(() => window.scrollTo(0 , 0) , []);
     return(
@@ -18,19 +34,19 @@ export default function AboutPage() {
                         <div className="first-child w-full flex absolute top-0 left-0">
                             <p><span className="font-bold">8,200+</span> five ster reviews</p>
                             <div className="img relative w-[70%] h-[400px]">
-                                <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout.f69e149b.jpg&w=1920&q=75" alt="img" className="absolute top-0 left-0 w-full h-full" />
+                                <img loading="lazy"src={aboutImg2} alt="img" className="absolute top-0 left-0 w-full h-full" />
                             </div>
                         </div>
                         <div className="second-child flex w-full items-end absolute bottom-0 left-0">
                             <div className="img relative rounded-md overflow-hidden sm2:w-[70%] sm2:h-[250px] sm:w-[50%] sm:h-[300px] md:w-[270px] h-[300px]">
-                                <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-banner.e0e4b03f.jpg&w=1080&q=75" alt="img" className="absolute top-0 left-0 w-full h-full" />
+                                <img loading="lazy"src={aboutImg1} alt="img" className="absolute top-0 left-0 w-full h-full" />
                             </div>
                             <div className="reative flex flex-col my-3 ml-3">
                                 <div className="images flex relative my-[10px]">
-                                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstudent-1.f50d33c9.jpg&w=96&q=75" alt="img" className="w-[30px] h-[30px] rounded-full" />
-                                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstudent-1.f50d33c9.jpg&w=96&q=75" alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-10px]" />
-                                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstudent-1.f50d33c9.jpg&w=96&q=75" alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-20px]" />
-                                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstudent-1.f50d33c9.jpg&w=96&q=75" alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-40px]" />
+                                        <img loading="lazy"src={st6} alt="img" className="w-[30px] h-[30px] rounded-full" />
+                                        <img loading="lazy"src={st7} alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-10px]" />
+                                        <img loading="lazy"src={st8} alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-20px]" />
+                                        <img loading="lazy"src={st9} alt="img" className="w-[30px] h-[30px] rounded-full translate-x-[-40px]" />
                                 </div>
                                 <p>Join over <span className="font-bold">4,000+</span> students</p>
                             </div>
@@ -60,19 +76,19 @@ export default function AboutPage() {
                     </h2>
                     <div data-aos="fade-up" className="trusted-list my-[50px] relative w-full grid sm2:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                         <div className="trust-box flex justify-center items-center mb-[30px] lg:mb-0">
-                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-1.a63c87e4.png&w=256&q=75" alt="" />
+                            <img loading="lazy"src={brand1} alt="brand-img" />
                         </div>
                         <div className="trust-box flex justify-center items-center mb-[30px] lg:mb-0">
-                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-2.b5f7190b.png&w=256&q=75" alt="" />
+                            <img loading="lazy"src={brand2} alt="brand-img" />
                         </div>
                         <div className="trust-box flex justify-center items-center mb-[30px] lg:mb-0">
-                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-3.a368f927.png&w=128&q=75" alt="" />
+                            <img loading="lazy"src={brand3} alt="brand-img" />
                         </div>
                         <div className="trust-box flex justify-center items-center mb-[30px] lg:mb-0">
-                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-4.33735491.png&w=256&q=75" alt="" />
+                            <img loading="lazy"src={brand4} alt="brand-img" />
                         </div>
                         <div className="trust-box flex justify-center items-center mb-[30px] lg:mb-0">
-                            <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-5.f718d82c.png&w=256&q=75" alt="" />
+                            <img loading="lazy"src={brand5} alt="brand-img" />
                         </div>
                     </div>
                     <GoBtn animate={"fade-up"} btnText="View all partners" btnPath="/" />
@@ -88,9 +104,9 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div data-aos="fade-right" className="choose-img relative w-full md:w-[400px]">
-                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhy.1b369aa3.png&w=1080&q=75" alt="img" className="z-[10] relative"/>
-                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhy-shape-line.e3812c00.png&w=128&q=75" alt="img-icon" className="absolute top-0 right-0 w-[30px] opacity-75 z-30" />
-                        <img loading="lazy"src="https://educal-react.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhy-shape-pink.8b205ae1.png&w=828&q=75" alt="img" className="absolute w-[300px] bottom-[-50px] left-0 z-[1]"/>
+                        <img loading="lazy"src={whyusPanner} alt="img" className="z-[10] relative"/>
+                        <img loading="lazy"src={whyShapeLine} alt="img-icon" className="absolute top-0 right-0 w-[30px] opacity-75 z-30" />
+                        <img loading="lazy"src={whyShapePink} alt="img" className="absolute w-[300px] bottom-[-50px] left-0 z-[1]"/>
                     </div>
                 </div>
                 <div className="prouded-container my-[50px] flex flex-col w-[90%] items-center justify-center py-3">
@@ -121,12 +137,12 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 w-[90%] my-[50px]">
-                        <div data-aos="fade-left" className="box bg-[url('https://educal-react.vercel.app/assets/img/banner/banner-bg-1.jpg')] bg-no-repeat bg-cover bg-center relative lg:mr-4 flex flex-col rounded-md overflow-hidden p-6">
+                        <div data-aos="fade-left" style={{backgroundImage : `url('${bgBanner1}')`}} className={`box bg-no-repeat bg-cover bg-center relative lg:mr-4 flex flex-col rounded-md overflow-hidden p-6`}>
                             <span className="relative w-fit rounded-[20px] bg-red-600 text-white py-[1px] px-[20px] flex justify-center items-center">Free</span>
                             <h2 className="my-[30px] font-bold text-2xl">Germany Foundation Document</h2>
                             <Link className="w-[170px] flex justify-center items-center py-[7px] rounded-md text-white transition-all duration-300 shadow-md hover:shadow-slate-600 hover:translate-y-[-4px] bg-blue-600 ">View Courses</Link>
                         </div>
-                        <div data-aos="fade-right" className="box bg-[url('https://educal-react.vercel.app/assets/img/banner/banner-bg-2.jpg')] bg-no-repeat bg-cover bg-center relative flex flex-col rounded-md overflow-hidden p-6 mt-[20px] lg:mt-0">
+                        <div data-aos="fade-right" style={{backgroundImage : `url('${bgBanner2}')`}} className="box bg-no-repeat bg-cover bg-center relative flex flex-col rounded-md overflow-hidden p-6 mt-[20px] lg:mt-0">
                             <span className="relative w-fit rounded-[20px] bg-orange-500 text-white py-[1px] px-[20px] flex justify-center items-center">New</span>
                             <h2 className="my-[30px] font-bold text-2xl">Online Courses From Eduka Universityt</h2>
                             <Link className="w-[170px] flex justify-center items-center py-[7px] rounded-md text-white transition-all duration-300 shadow-md hover:shadow-slate-600 hover:translate-y-[-4px] bg-blue-600 ">View Courses</Link>
