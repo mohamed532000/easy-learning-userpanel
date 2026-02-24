@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import LoginPopub from "../../../components/login-popub/js/LoginPopub";
 import { onValue, ref } from "firebase/database";
 import { database } from "../../../project-api/Firebase";
+import headingImg from "../../../media/images/header-images/header-img.png"
 export default function PlaningPage() {
     let plansCart = useSelector(state => state.plansReducer);
     let [activeLogin , setActiveLogin] = useState();
@@ -39,7 +40,7 @@ export default function PlaningPage() {
     }
     return (
         <>
-            <PageHeading  headingImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/banner/pricing.png"/>
+            <PageHeading  headingImgSrc={headingImg}/>
             <div className="plans-section flex flex-col justify-center items-center">
                 <SectionTitle title="We create a pricing package for all standard students" />
                 <div className="plans-container w-[90%] flex flex-wrap justify-center md:justify-between items-center mt-5 mb-[100px] py-3">
