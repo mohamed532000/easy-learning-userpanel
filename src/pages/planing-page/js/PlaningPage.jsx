@@ -48,7 +48,6 @@ export default function PlaningPage() {
                             <PlanCard
                                 key={index}
                                 animate={"zoom-in"}
-                                planImg={plan.planImg}
                                 planName={plan.planName}
                                 featureStatusImg="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick-2.svg"
                                 featureText="High Resolution Videos"
@@ -57,7 +56,7 @@ export default function PlaningPage() {
                                 planStatus={plan.planStatus}
                                 loginPopubFunction={loginP}
                                 scrollIntoViewFunction = {scrollIntoViewCheckout()}
-                                
+                                className={`${plan.planStatus == "premium" ? "bg-gradient-to-bl from-red-500 to-blue-500" : ""}`}
                             /> 
                         )
                     })}

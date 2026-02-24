@@ -21,7 +21,16 @@ import st2Img from "../../../media/images/st2.webp";
 import st3Img from "../../../media/images/st3.webp";
 import girlSt1Img from "../../../media/images/girl-st1.webp";
 import girlSt2Img from "../../../media/images/girl-st2.webp";
-
+import likeIconPng from "../../../media/icons/like.png";
+import mortarboardIconPng from "../../../media/icons/mortarboard.png";
+import learningIconPng from "../../../media/icons/deep-learning.png";
+import onlineIconPng from "../../../media/icons/online-icon.png";
+import fiendlyIconPng from "../../../media/icons/friendly-icon.png";
+import booksIconPng from "../../../media/icons/books-icon.png";
+import ideaIconPng from "../../../media/icons/light-bulb.png";
+import medalIcon from "../../../media/icons/medal.png"
+import customerServiceIcon from "../../../media/icons/customer-service.png";
+import whyUsImg from "../../../media/images/why-us-img.png"
 export default function HomePage() {
     let [allCourses , setAllCourses] = useState([])
     let [allCoursesCategories , setAllCoursesCategories] = useState([])
@@ -154,8 +163,8 @@ export default function HomePage() {
                 </div>
                 <div className="offer-container w-[90%] flex flex-col justify-center items-center md:flex-col lg:flex-row md:justify-center lg:justify-between md:items-center lg:items-center py-[50px] my-[50px]">
                     <div data-aos="fade-left" className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[500px] lg:h-400px">
-                        <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/home-1/advisor.png" alt="personal img" className="absolute top-0 left-0 w-full h-full"/>
-                        <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/home-1/advisor-sm-1.svg"/>
+                        <img loading="lazy"src="https://i.pinimg.com/736x/5f/b4/6a/5fb46a2560c5816de1c0c90c58a81d98.jpg" alt="personal img" className="absolute top-0 left-0 w-full h-full"/>
+                        <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc={likeIconPng}/>
                     </div>
                     <div data-aos="fade-right" className="offer-text relative w-[90%] md:w-[500px] lg:w-[500px]">
                         <h2 className="offer-title text-3xl">We Offering Live Coaching by Skilled Advisors</h2>
@@ -164,15 +173,15 @@ export default function HomePage() {
                         <div className="read-more-div flex flex-col justify-start items-start my-3">
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
+                                    <img loading="lazy"src={mortarboardIconPng} alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Industry Expert Instructor</h2>
                             </div>
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
+                                    <img loading="lazy"src={learningIconPng} alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
-                                <h2>Industry Expert Instructor</h2>
+                                <h2>Deep learning with Expert Instructor</h2>
                             </div>
                             <DarkBtn btnText="Read More" pathname="/"/>
                         </div>
@@ -186,13 +195,13 @@ export default function HomePage() {
                         <div className="read-more-div flex flex-col justify-start items-start my-3">
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
+                                    <img loading="lazy"src={onlineIconPng} alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Easy Online Learning Platform</h2>
                             </div>
                             <div className="flex justify-start items-center w-full my-2">
                                 <div className="img-div mr-2 bg-slate-400 p-2 rounded-full">
-                                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/icons/tick.svg" alt="correct-img" className="w-[20px] h-[20px]"/>
+                                    <img loading="lazy"src={fiendlyIconPng} alt="correct-img" className="w-[20px] h-[20px]"/>
                                 </div>
                                 <h2>Friendly Enviroments & Teachers</h2>
                             </div>
@@ -200,9 +209,9 @@ export default function HomePage() {
                     </div>
                     <div data-aos="fade-left" className="offer-img relative w-[90%] md:w-[400px] lg:w-[400px] mb-10 md:mb-0 lg:mb-0 h-[500px] md:h-[450px] lg:h-450px">
                         <img loading="lazy"src="https://pngimg.com/uploads/thinking_man/thinking_man_PNG11606.png" alt="personal img" className="absolute top-0 left-0 w-full h-full"/>
-                        <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/ebook-sm-1.svg"/>
+                        <ImgIcon styleClasses="absolute top-[50px] bg-slate-100 rotate-[-10deg]" iconImgSrc={ideaIconPng}/>
                         <div className="absolute w-full md:w-[250px] lg:w-[250px] py-2 px-2 bottom-[10px] right-[10px] rounded bg-white flex justify-start items-center">
-                            <ImgIcon styleClasses="bg-[#e2cff8]" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/ebook-sm-1.svg"/>
+                            <ImgIcon styleClasses="bg-[#e2cff8]" iconImgSrc={booksIconPng}/>
                             <h2 className="ml-[20px] text-2xl">Book Shop</h2>
                         </div>
                     </div>
@@ -212,29 +221,29 @@ export default function HomePage() {
                 <SectionTitle title="Why Choose Us" />
                 <div className="choose-us-container w-[90%] flex flex-col md:flex-row lg:flex-row justify-between items-center py-5 my-5">
                     <div data-aos="fade-left" className="choose-img relative w-full md:w-[400px] lg:w-[400px] h-[450px]">
-                        <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/choose-us.png" alt=""  className="absolute w-full h-full top-0 left-0"/>
-                        <ImgIcon styleClasses="absolute z-10 right-[20px] bg-[#272f62] rounded-full" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/question-mark.svg" />
+                        <img loading="lazy"src={whyUsImg} alt=""  className="absolute w-full h-full top-0 left-0"/>
+                        <ImgIcon styleClasses="absolute z-10 right-[20px] bg-[#272f62] rounded-full" iconImgSrc={ideaIconPng} />
                     </div>
                     <div data-aos="fade-right" className="choose-text flex flex-col w-full md:w-[500px] lg:w-[500px]">
                         <div className="text-box transition-all duration-500 hover:translate-x-1 flex flex-col md:flex-row lg:flex-row text-center md:text-left lg:text-left items-center p-4 rounded-lg shadow-sm shadow-slate-400 my-4">
-                            <ImgIcon styleClasses="bg-red-200" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/choose-us-1.svg"/>
+                            <ImgIcon styleClasses="w-52" iconImgSrc={medalIcon}/>
                             <div className="text-content relative ml-0 md:ml-[30px] lg:ml-[30px] mt-4 md:mt-0 lg:mt-0 flex flex-col">
                                 <h2 className="text-xl font-bold text-slate-800">Expert Instructor</h2>
-                                <p className="my-3">Convallis vivamus at cras porta nibh velit quis nostrud exercitation ullamco.s</p>
+                                <p className="my-3">Industry veterans with years of hands-on experience guide you through every step. Get personalized feedback and insider knowledge that only comes from years of professional practice</p>
                             </div>
                         </div>
                         <div className="text-box transition-all duration-500 hover:translate-x-1 flex flex-col md:flex-row lg:flex-row text-center md:text-left lg:text-left items-center p-4 rounded-lg shadow-sm shadow-slate-400 my-4">
-                            <ImgIcon styleClasses="bg-red-200" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/choose-us-2.svg"/>
+                            <ImgIcon styleClasses="w-52" iconImgSrc={ideaIconPng}/>
                             <div className="text-content relative ml-0 md:ml-[30px] lg:ml-[30px] mt-4 md:mt-0 lg:mt-0 flex flex-col">
                                 <h2 className="text-xl font-bold text-slate-800">Flexible Learning</h2>
-                                <p className="my-3">Convallis vivamus at cras porta nibh velit quis nostrud exercitation ullamco.s</p>
+                                <p className="my-3">Learn anytime, anywhere across all your devices. Self-paced modules, downloadable resources, and structured learning paths let you balance education with your busy lifestyle</p>
                             </div>
                         </div>
                         <div className="text-box transition-all duration-500 hover:translate-x-1 flex flex-col md:flex-row lg:flex-row text-center md:text-left lg:text-left items-center p-4 rounded-lg shadow-sm shadow-slate-400 my-4">
-                            <ImgIcon styleClasses="bg-red-200" iconImgSrc="https://asset.uibucket.net/html/ilearning/assets/images/icons/choose-us-3.svg"/>
+                            <ImgIcon styleClasses="w-52" iconImgSrc={customerServiceIcon}/>
                             <div className="text-content relative ml-0 md:ml-[30px] lg:ml-[30px] mt-4 md:mt-0 lg:mt-0 flex flex-col">
                                 <h2 className="text-xl font-bold text-slate-800">Educator Support</h2>
-                                <p className="my-3">Convallis vivamus at cras porta nibh velit quis nostrud exercitation ullamco.s</p>
+                                <p className="my-3">Access comprehensive learning resources including practice exercises, downloadable materials, and direct messaging with instructors. We're committed to answering your questions within 24 hours.</p>
                             </div>
                         </div>
                     </div>
@@ -258,44 +267,39 @@ export default function HomePage() {
                                 studentImg={st1Img}
                                 studentCourse="UX/UI Student"
                                 studentName="Johny"
-                                studentInfo="Provides educational consulting services for student- clients who want to study in
-                                Canada with the application process."
+                                studentInfo="The UX/UI course completely changed how I see design. The instructor explained Figma workflows and user testing so clearly. I'm now confidently designing intuitive interfaces!"
                                 studentReview={4} />
                         </SwiperSlide>
                         <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
                                 studentImg={st2Img}
-                                studentCourse="UX/UI Student"
+                                studentCourse="Back-End Diploma Student"
                                 studentName="Moustafa Osama"
-                                studentInfo="Provides educational consulting services for student- clients who want to study in
-                                Canada with the application process."
+                                studentInfo="This back-end diploma gave me real confidence with Node.js and databases. Building actual APIs during the course prepared me for my first freelance project. Highly recommended!"
                                 studentReview={5} />
                         </SwiperSlide>
                         <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
                                 studentImg={st3Img}
-                                studentCourse="UX/UI Student"
+                                studentCourse="Flutter Student"
                                 studentName="Reda Khaled"
-                                studentInfo="Provides educational consulting services for student- clients who want to study in
-                                Canada with the application process."
+                                studentInfo="Flutter course was hands-on from day one! I built two complete mobile apps during the program. The instructor's explanations of state management finally made sense to me."
                                 studentReview={5} />
                         </SwiperSlide>
                         <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
                                 studentImg={girlSt1Img}
-                                studentCourse="UX/UI Student"
+                                studentCourse=".Net Diploma Student"
                                 studentName="Nada Ahmed"
-                                studentInfo="Provides educational consulting services for student- clients who want to study in
-                                Canada with the application process."
+                                studentInfo="The .Net diploma exceeded my expectations. We covered everything from C# basics to advanced ASP.NET Core. The real-world projects helped me land my current job!"
                                 studentReview={4} />
                         </SwiperSlide>
                         <SwiperSlide className="slide py-[70px] flex justify-center reviews-card-swiper-slide">
                             <StudentCard 
                                 studentImg={girlSt2Img}
                                 studentCourse="UX/UI Student"
-                                studentName="Juiria Nasser"
-                                studentInfo="Provides educational consulting services for student- clients who want to study in
-                                Canada with the application process."
+                                studentName="Julia Nasser"
+                                studentInfo="Loved the practical approach to UX research and prototyping. The portfolio review session was incredibly helpful. Now I feel ready to apply for junior design positions."
                                 studentReview={4} />
                         </SwiperSlide>
                     </Swiper>

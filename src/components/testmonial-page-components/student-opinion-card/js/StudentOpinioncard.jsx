@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import quotationIcon from "../../../../media/icons/quotation.png"
 StudentOpinionCard.propTypes = {
     studenImg : PropTypes.string.isRequired,
     studentName : PropTypes.string.isRequired,
@@ -34,7 +35,7 @@ export default function StudentOpinionCard({studenImg , studentName , studentCou
                         <h2 className="mb-2 font-bold tracking-wide text-neutral-600">{studentName}</h2>
                         <h2>{studentCourse}</h2>
                     </div>
-                    <img loading="lazy"src="https://asset.uibucket.net/html/ilearning/assets/images/testimonial/quote.svg" alt="icon-img" className="w-[80px]" />
+                    <img loading="lazy"src={quotationIcon} alt="icon-img" className="w-[80px] opacity-20" />
                 </div>
                 <div className="student-opinion py-4">
                     <p className="text-xl text-slate-600">{studentSay}</p>

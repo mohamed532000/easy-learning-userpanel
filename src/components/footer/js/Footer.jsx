@@ -7,10 +7,10 @@ export default function Footer (){
         <>
             <div className="footer bg-[#f5edfe] pt-8 flex relative w-full flex-col justify-center items-center">
                 <div className="footer-head relative rounded-xl overflow-hidden py-[50px] w-[90%] bg-[url(https://asset.uibucket.net/html/ilearning/assets/images/subscribe-bg.svg)] bg-center bg-no-repeat bg-cover footer-container flex flex-col justify-center items-center">
-                    <h2 className="my-3 text-center font-bold text-white text-3xl">Subscribe For Get Update</h2>
-                    <p className="my-3 text-center text-white">30k+ students daily learn with Edugo. Subscribe for new courses.</p>
+                    <h2 className="my-3 text-center font-bold  text-3xl">Subscribe For Get Update</h2>
+                    <p className="my-3 text-center ">30k+ students daily learn with Edugo. Subscribe for new courses.</p>
                     <div className="subscribe-input relative w-[90%] md:w-auto lg:w-auto border border-white rounded p-1 flex justify-between items-center my-5">
-                        <input type="text" className="outline-0 w-full mr-1 bg-transparent text-white" placeholder="Enter your e-mail"/>
+                        <input type="text" className="outline-0 w-full mr-1 bg-transparent " placeholder="Enter your e-mail"/>
                         <button className=" relative py-2 px-3 bg-white rounded text-black">
                             Subscribe
                         </button>
